@@ -14,14 +14,19 @@ export function VideoSection() {
         </div>
         
         <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
-          <VideoPlayer 
-            src="/videos/hero-video.mp4" 
-            type="local" 
-            autoPlay 
-            loop 
-            muted 
-            className="w-full border-none shadow-none rounded-none"
-          />
+          <div style={{ width: '100%', overflow: 'hidden', borderRadius: '12px' }}>
+            <video 
+              key="hero-video-final"
+              autoPlay 
+              muted 
+              loop 
+              playsInline 
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+            >
+              <source src="/hero.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           {/* Subtle overlay to match site branding */}
           <div className="absolute inset-0 pointer-events-none bg-primary/5" />
         </div>
