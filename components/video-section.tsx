@@ -15,12 +15,12 @@ export function VideoSection() {
         
         <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
           <VideoPlayer 
-            src="/videos/hero-video.mp4" 
+            src="/hero.mp4" 
             type="local" 
             autoPlay 
             loop 
             muted 
-            className="w-full border-none shadow-none rounded-none"
+            className="w-full"
           />
           {/* Subtle overlay to match site branding */}
           <div className="absolute inset-0 pointer-events-none bg-primary/5" />

@@ -16,13 +16,13 @@ export function VideoPlayer({
   src,
   type = "youtube",
   className,
-  autoPlay = false,
-  loop = false,
-  muted = false,
-  poster = "/images/trucks/howo-trucks-fleet-4-white-yard.jpg", // Using a high-quality yard photo as default poster
+  autoPlay = true,
+  loop = true,
+  muted = true,
+  poster,
 }: VideoPlayerProps) {
   return (
-    <div className={cn("relative w-full overflow-hidden rounded-xl border border-border bg-muted shadow-lg", className)}>
+    <div className={cn("relative w-full overflow-hidden", className)}>
       {type === "youtube" ? (
         <div className="aspect-video w-full">
           <iframe
@@ -35,14 +35,13 @@ export function VideoPlayer({
         </div>
       ) : (
         <video
-          width="100%"
-          height="auto"
+          key={src}
           autoPlay={autoPlay}
           muted={muted}
           loop={loop}
           playsInline
           poster={poster}
-          className="block w-full"
+          style={{ width: '100%', height: 'auto', display: 'block' }}
         >
           <source src={src} type="video/mp4" />
           Your browser does not support the video tag.
