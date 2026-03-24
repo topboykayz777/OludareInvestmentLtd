@@ -31,13 +31,16 @@ export function VideoPlayer({
         />
       ) : (
         <video
-          src={src}
           autoPlay={autoPlay}
           loop={loop}
           muted={muted}
           playsInline
+          preload="auto"
           className="absolute inset-0 h-full w-full object-cover"
-        />
+        >
+          <source src={src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       )}
     </div>
   );
