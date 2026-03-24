@@ -73,6 +73,10 @@ export const metadata: Metadata = {
     'truck transmission spare parts Lagos',
     'heavy truck dealer Ojodu Berger',
   ],
+  icons: {
+    icon: '/images/logo/oil-logo-icon.jpg',
+    apple: '/images/logo/oil-logo-icon.jpg',
+  },
   authors: [{ name: 'Oludare Investment Ltd' }],
   creator: 'Oludare Investment Ltd',
   openGraph: {
@@ -107,69 +111,65 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Oludare Investment Ltd",
+    "alternateName": ["OIL", "Oludare Investment"],
+    "description": "Dealers and Suppliers of All Kinds of Trucks, Heavy Machinery and Construction Equipment. HOWO Sino Trucks, Shacman, XCMG, Shantui, CAT.",
+    "url": "https://oludareinvestment.com",
+    "telephone": ["+2348020890065", "+2348105955892"],
+    "email": "Oludareinvestmentltd@gmail.com",
+    "taxID": "RC 1042746",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "209, Lagos/Ibadan Express Way, Beside Total KFC Filling Station",
+      "addressLocality": "Ojodu Berger",
+      "addressRegion": "Lagos State",
+      "addressCountry": "NG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "6.6318",
+      "longitude": "3.3515"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "priceRange": "$$$$",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Nigeria"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Trucks and Heavy Machinery",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "HOWO Sino Trucks" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Shacman Dump Trucks" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Cement Mixer Trucks" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Crane Trucks" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Flatbed Trucks" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Tanker Trucks" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Excavators" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Wheel Loaders" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Bulldozers & Graders" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Truck Parts & Engines" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "CNG Trucks" } }
+      ]
+    }
+  };
+
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/images/logo/oil-logo-icon.jpg" />
-        <link rel="apple-touch-icon" href="/images/logo/oil-logo-icon.jpg" />
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${roboto.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Oludare Investment Ltd",
-              "alternateName": ["OIL", "Oludare Investment"],
-              "description": "Dealers and Suppliers of All Kinds of Trucks, Heavy Machinery and Construction Equipment. HOWO Sino Trucks, Shacman, XCMG, Shantui, CAT.",
-              "url": "https://oludareinvestment.com",
-              "telephone": ["+2348020890065", "+2348105955892"],
-              "email": "Oludareinvestmentltd@gmail.com",
-              "taxID": "RC 1042746",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "209, Lagos/Ibadan Express Way, Beside Total KFC Filling Station",
-                "addressLocality": "Ojodu Berger",
-                "addressRegion": "Lagos State",
-                "addressCountry": "NG"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "6.6318",
-                "longitude": "3.3515"
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                "opens": "08:00",
-                "closes": "18:00"
-              },
-              "priceRange": "$$$$",
-              "areaServed": {
-                "@type": "Country",
-                "name": "Nigeria"
-              },
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Trucks and Heavy Machinery",
-                "itemListElement": [
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "HOWO Sino Trucks" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Shacman Dump Trucks" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Cement Mixer Trucks" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Crane Trucks" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Flatbed Trucks" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Tanker Trucks" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Excavators" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Wheel Loaders" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Bulldozers & Graders" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Truck Parts & Engines" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "CNG Trucks" } }
-                ]
-              }
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className={`${inter.variable} ${roboto.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
