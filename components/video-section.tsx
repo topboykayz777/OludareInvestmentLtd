@@ -20,7 +20,7 @@ export function VideoSection() {
             autoPlay 
             loop 
             muted 
-            className="aspect-video w-full border-none shadow-none rounded-none"
+            className="w-full border-none shadow-none rounded-none"
           />
           {/* Subtle overlay to match site branding */}
           <div className="absolute inset-0 pointer-events-none bg-primary/5" />
