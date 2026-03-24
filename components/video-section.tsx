@@ -1,6 +1,6 @@
 "use client";
 
-import { VideoPlayer } from "./video-player";
+import { VideoPlayer } from "@/components/video-player";
 
 export function VideoSection() {
   return (
