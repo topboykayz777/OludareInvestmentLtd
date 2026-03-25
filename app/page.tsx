@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { VideoSection } from "@/components/video-section"
 import { ProductsSection } from "@/components/products-section"
-import { ShacmanFleetSection } from "@/components/shacman-fleet-section"
 import { BrandsSection } from "@/components/brands-section"
 import { ServicesSection } from "@/components/services-section"
 import { GallerySection } from "@/components/gallery-section"
@@ -21,7 +20,6 @@ export default function Home() {
       <AboutSection />
       <VideoSection />
       <ProductsSection />
-      <ShacmanFleetSection />
       <BrandsSection />
       <ServicesSection />
       <GallerySection />

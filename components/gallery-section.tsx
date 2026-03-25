@@ -5,6 +5,7 @@ import Image from "next/image"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
 
 const gallery = [
+  { src: "/images/trucks/shacman-fleet-green.jpg", alt: "Shacman F3000 fleet at Oludare Investment yard", label: "Shacman Fleet" },
   { src: "/images/trucks/howo-trucks-fleet-4-white-yard.jpg", alt: "HOWO trucks fleet in yard", label: "HOWO Fleet" },
   { src: "/images/excavators/cat-320-amphibious-excavator.jpg", alt: "CAT 320 amphibious excavator", label: "CAT Excavator" },
   { src: "/images/loaders/liugong-wheel-loader.jpg", alt: "LiuGong wheel loader", label: "LiuGong Loader" },
