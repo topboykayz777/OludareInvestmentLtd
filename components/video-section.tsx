@@ -11,16 +11,16 @@ export function VideoSection() {
           </h2>
         </div>
         
-        <div style={{ width: '100%', maxWidth: '900px', margin: '0 auto', overflow: 'hidden', borderRadius: '10px' }} className="shadow-2xl ring-1 ring-border">
+        <div style={{ width: '100%', maxWidth: '1000px', margin: '0 auto', overflow: 'hidden', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
           <video 
-            key="final-oludare-video"
+            key="oludare-permanent-hero"
             autoPlay 
             muted 
             loop 
             playsInline 
             style={{ width: '100%', height: 'auto', display: 'block' }}
           >
-            <source src="/hero.mp4?v=2" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dxb1zqlp0/video/upload/v1774398745/WhatsApp_Video_2026-03-24_at_9.32.01_AM_xmbjj7.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
