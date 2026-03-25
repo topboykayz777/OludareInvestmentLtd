@@ -1,7 +1,5 @@
 "use client";
 
-import { VideoPlayer } from "@/components/video-player";
-
 export function VideoSection() {
   return (
     <section className="bg-background py-12 lg:py-20">
@@ -13,17 +11,18 @@ export function VideoSection() {
           </h2>
         </div>
         
-        <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
-          <VideoPlayer 
-            src="/hero.mp4" 
-            type="local" 
+        <div style={{ width: '100%', maxWidth: '900px', margin: '0 auto', overflow: 'hidden', borderRadius: '10px' }} className="shadow-2xl ring-1 ring-border">
+          <video 
+            key="final-oludare-video"
             autoPlay 
-            loop 
             muted 
-            className="w-full"
-          />
-          {/* Subtle overlay to match site branding */}
-          <div className="absolute inset-0 pointer-events-none bg-primary/5" />
+            loop 
+            playsInline 
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+          >
+            <source src="/hero.mp4?v=2" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         
         <p className="mt-6 text-center text-sm text-muted-foreground italic">
