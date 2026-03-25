@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { OilLogoBrand } from "@/components/oil-logo"
@@ -21,12 +22,22 @@ const navLinks = [
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    setMobileOpen(false)
+    // If we are already on the homepage, scroll to top instead of reloading
+    if (pathname === "/") {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
 
   return (
     <>
@@ -52,12 +63,12 @@ export function Header() {
 
       <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-primary shadow-2xl" : "bg-primary/95 backdrop-blur-sm"}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
-          {/* Logo - Fixed to point to root / and close mobile menu */}
+          {/* Logo - Fixed to scroll to top if on home page */}
           <Link 
             href="/" 
             className="flex items-center text-primary-foreground transition-opacity hover:opacity-90 focus:outline-none"
             aria-label="Oludare Investment Ltd Home"
-            onClick={() => setMobileOpen(false)}
+            onClick={handleLogoClick}
           >
             <OilLogoBrand size="lg" />
           </Link>
