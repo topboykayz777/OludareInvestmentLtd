@@ -20,7 +20,7 @@ export function VideoSection() {
             playsInline 
             style={{ width: '100%', height: 'auto', display: 'block' }}
           >
-            <source src="https://res.cloudinary.com/dxb1zqlp0/video/upload/v1774398745/WhatsApp_Video_2026-03-24_at_9.32.01_AM_xmbjj7.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dxb1zqlp0/video/upload/v1774399169/hero_2_vcahzr.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
