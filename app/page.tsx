@@ -7,10 +7,12 @@ import { BrandsSection } from "@/components/brands-section"
 import { ServicesSection } from "@/components/services-section"
 import { GallerySection } from "@/components/gallery-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
+import { BlogSection } from "@/components/blog-section"
 import { FaqSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { WhatsAppFab } from "@/components/whatsapp-fab"
+import { Toaster } from "@/components/ui/sonner"
 
 export default function Home() {
   return (
@@ -24,10 +26,12 @@ export default function Home() {
       <ServicesSection />
       <GallerySection />
       <TestimonialsSection />
+      <BlogSection />
       <FaqSection />
       <ContactSection />
       <Footer />
       <WhatsAppFab />
+      <Toaster position="top-center" />
     </main>
   )
 }

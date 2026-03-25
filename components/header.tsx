@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { OilLogoBrand } from "@/components/oil-logo"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const WHATSAPP_URL = "https://wa.me/2348105955892?text=Hello%2C%20I%27m%20interested%20in%20your%20trucks%20and%20machinery.%20Please%20share%20more%20details."
 
@@ -13,6 +14,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Products", href: "#products" },
   { label: "Services", href: "#services" },
+  { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ]
 
@@ -68,8 +70,9 @@ export function Header() {
             ))}
           </nav>
 
-          {/* CTA buttons -- both always visible */}
-          <div className="hidden items-center gap-2 lg:flex">
+          {/* CTA buttons */}
+          <div className="hidden items-center gap-3 lg:flex">
+            <ThemeToggle />
             <a href="tel:+2348020890065">
               <Button variant="outline" className="border-primary-foreground/80 text-primary-foreground bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground hover:border-accent font-medium gap-2 transition-all">
                 <Phone className="h-4 w-4" />
@@ -85,13 +88,16 @@ export function Header() {
           </div>
 
           {/* Mobile toggle */}
-          <button
-            className="lg:hidden text-primary-foreground p-2"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
-          >
-            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="flex items-center gap-2 lg:hidden">
+            <ThemeToggle />
+            <button
+              className="text-primary-foreground p-2"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            >
+              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile nav */}

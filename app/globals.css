@@ -39,6 +39,26 @@
   --sidebar-ring: #E8771E;
 }
 
+.dark {
+  --background: #0a0a12;
+  --foreground: #f0f2f8;
+  --card: #121221;
+  --card-foreground: #f0f2f8;
+  --popover: #121221;
+  --popover-foreground: #f0f2f8;
+  --primary: #253a7a;
+  --primary-foreground: #ffffff;
+  --secondary: #1a1a2e;
+  --secondary-foreground: #f0f2f8;
+  --muted: #1a1a2e;
+  --muted-foreground: #8b9dc3;
+  --accent: #E8771E;
+  --accent-foreground: #ffffff;
+  --border: #253a7a;
+  --input: #253a7a;
+  --ring: #E8771E;
+}
+
 @theme inline {
   --font-sans: var(--font-inter), 'Inter', system-ui, sans-serif;
   --font-mono: var(--font-roboto), 'Roboto', system-ui, sans-serif;
@@ -86,7 +106,7 @@ html {
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 transition-colors duration-300;
   }
   body {
     @apply bg-background text-foreground;
@@ -104,8 +124,8 @@ html {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 119, 30, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(232, 119, 30, 0); }
 }
 
 .animate-slide-in {
