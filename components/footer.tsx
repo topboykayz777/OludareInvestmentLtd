@@ -3,11 +3,11 @@ import { OilLogoBrand } from "@/components/oil-logo"
 import { MapPin, Phone, Mail, Globe } from "lucide-react"
 
 const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
-  { label: "Our Products", href: "#products" },
-  { label: "Our Services", href: "#services" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/#about" },
+  { label: "Our Products", href: "/#products" },
+  { label: "Our Services", href: "/#services" },
+  { label: "Contact Us", href: "/#contact" },
 ]
 
 const productLinks = [
@@ -69,7 +69,7 @@ export function Footer() {
               {productLinks.map((product) => (
                 <li key={product}>
                   <Link
-                    href="#products"
+                    href="/#products"
                     className="text-sm text-white/50 transition-colors hover:text-accent"
                   >
                     {product}
@@ -127,8 +127,8 @@ export function Footer() {
             </p>
           </div>
           <div className="flex gap-6">
-            <Link href="#" className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-accent transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-accent transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-accent transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-accent transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

@@ -10,12 +10,12 @@ import { ThemeToggle } from "@/components/theme-toggle"
 const WHATSAPP_URL = "https://wa.me/2348105955892?text=Hello%2C%20I%27m%20interested%20in%20your%20trucks%20and%20machinery.%20Please%20share%20more%20details."
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Products", href: "#products" },
-  { label: "Services", href: "#services" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/#about" },
+  { label: "Products", href: "/#products" },
+  { label: "Services", href: "/#services" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Contact", href: "/#contact" },
 ]
 
 export function Header() {
@@ -52,8 +52,8 @@ export function Header() {
 
       <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-primary shadow-2xl" : "bg-primary/95 backdrop-blur-sm"}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
-          {/* Logo */}
-          <Link href="#home" className="text-primary-foreground transition-opacity hover:opacity-90">
+          {/* Logo - Fixed to point to root / */}
+          <Link href="/" className="text-primary-foreground transition-opacity hover:opacity-90">
             <OilLogoBrand size="lg" />
           </Link>
 
