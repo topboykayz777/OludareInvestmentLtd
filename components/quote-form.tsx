@@ -42,9 +42,20 @@ export function QuoteForm() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-    toast.success("Quote request sent! Our team will contact you shortly.")
-    form.reset()
+    const whatsappMessage = `*New Corporate Quote Request*%0A%0A` +
+      `*Name:* ${values.name}%0A` +
+      `*Company:* ${values.company}%0A` +
+      `*Email:* ${values.email}%0A` +
+      `*Phone:* ${values.phone}%0A` +
+      `*Category:* ${values.category}%0A` +
+      `*Quantity:* ${values.quantity}%0A` +
+      `*Requirements:* ${values.message}`;
+
+    const whatsappUrl = `https://wa.me/2348105955892?text=${whatsappMessage}`;
+    
+    window.open(whatsappUrl, "_blank");
+    toast.success("Redirecting to WhatsApp to complete your request...");
+    form.reset();
   }
 
   return (
@@ -118,10 +129,10 @@ export function QuoteForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="dump">Dump Trucks</SelectItem>
-                      <SelectItem value="mixer">Cement Mixers</SelectItem>
-                      <SelectItem value="excavator">Excavators</SelectItem>
-                      <SelectItem value="parts">Spare Parts</SelectItem>
+                      <SelectItem value="Dump Trucks">Dump Trucks</SelectItem>
+                      <SelectItem value="Cement Mixers">Cement Mixers</SelectItem>
+                      <SelectItem value="Excavators">Excavators</SelectItem>
+                      <SelectItem value="Spare Parts">Spare Parts</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />

@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowRight, Clock, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -11,7 +12,8 @@ const articles = [
     image: "/images/spare-parts/howo-diesel-engine-with-filters.jpg",
     date: "Feb 15, 2025",
     author: "Engr. Oludare",
-    readTime: "5 min read"
+    readTime: "5 min read",
+    href: "/blog/maintenance"
   },
   {
     title: "CNG vs Diesel: Which is Better for Your Fleet?",
@@ -19,7 +21,8 @@ const articles = [
     image: "/images/trucks/howo-cng-trucks-fleet.jpg",
     date: "Jan 28, 2025",
     author: "Sales Team",
-    readTime: "8 min read"
+    readTime: "8 min read",
+    href: "/blog/cng-vs-diesel"
   },
   {
     title: "Choosing the Right Excavator for Dredging Projects",
@@ -27,7 +30,8 @@ const articles = [
     image: "/images/excavators/cat-320-amphibious-excavator.jpg",
     date: "Jan 10, 2025",
     author: "Project Specialist",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    href: "/blog/excavator-guide"
   }
 ]
 
@@ -68,9 +72,9 @@ export function BlogSection() {
                   {article.excerpt}
                 </p>
                 <div className="mt-auto">
-                  <button className="text-sm font-bold text-primary flex items-center gap-1 hover:gap-2 transition-all">
+                  <Link href={article.href} className="text-sm font-bold text-primary flex items-center gap-1 hover:gap-2 transition-all">
                     Read Full Article <ArrowRight className="h-4 w-4" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </article>

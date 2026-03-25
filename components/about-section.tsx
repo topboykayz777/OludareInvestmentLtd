@@ -30,7 +30,7 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Left: Image collage with decorative elements */}
-          <div className="relative">
+          <div className="relative pb-12 lg:pb-0">
             <div className="absolute -top-10 -left-10 h-64 w-64 rounded-full bg-accent/5 blur-3xl" />
             <div className="absolute -bottom-10 -right-10 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
             
@@ -77,8 +77,8 @@ export function AboutSection() {
               </div>
             </div>
             
-            {/* Floating stat badge */}
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-2xl bg-primary p-1 shadow-2xl animate-pulse-glow">
+            {/* Floating stat badge - Adjusted positioning to prevent overlap */}
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-20 rounded-2xl bg-primary p-1 shadow-2xl animate-pulse-glow">
               <div className="rounded-xl border border-white/10 bg-primary px-8 py-5 text-center">
                 <p className="text-3xl font-black text-accent">7+ YEARS</p>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/60">Serving Nigeria's Industry</p>
