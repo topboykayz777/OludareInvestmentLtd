@@ -33,7 +33,13 @@ export function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Company info */}
           <div className="space-y-6">
-            <OilLogoBrand size="lg" />
+            <Link 
+              href="/" 
+              className="inline-block transition-opacity hover:opacity-90 focus:outline-none"
+              aria-label="Oludare Investment Ltd Home"
+            >
+              <OilLogoBrand size="lg" />
+            </Link>
             <p className="text-sm leading-relaxed text-white/50">
               Oludare Investment Ltd (RC 1042746) is Nigeria's premier dealer for Shacman and HOWO Sino Trucks. We provide heavy-duty solutions for construction, mining, and logistics nationwide.
             </p>
