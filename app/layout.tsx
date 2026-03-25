@@ -13,9 +13,13 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Oludare Investment Ltd (OIL) | HOWO Sino Trucks, Heavy Machinery & Equipment Dealers in Lagos Nigeria',
-  description: 'Oludare Investment Ltd (OIL) - RC 1042746. Dealers and Suppliers of All Kinds of Trucks. HOWO Sino Trucks, Shacman, heavy machinery, construction equipment, dump trucks, cement mixers, cranes, and truck parts. Located at Ojodu Berger, Lagos-Ibadan Expressway, Lagos, Nigeria.',
+  title: 'Oludare Investment Ltd (OIL) | Shacman & HOWO Sino Trucks Dealer Lagos Nigeria',
+  description: 'Oludare Investment Ltd (OIL) - RC 1042746. Leading Shacman and HOWO Sino Trucks dealer in Lagos. We supply dump trucks, cement mixers, excavators, and heavy machinery across Nigeria. Visit our yard at Ojodu Berger.',
   keywords: [
+    'Shacman trucks Lagos',
+    'Shacman dump truck Nigeria',
+    'Shacman F3000 Lagos',
+    'Shacman dealer Nigeria',
     'HOWO Sino Trucks Lagos',
     'HOWO Sino Trucks Nigeria',
     'HOWO Sino Trucks dealer Lagos',
@@ -42,8 +46,6 @@ export const metadata: Metadata = {
     'HOWO trucks Lagos',
     'HOWO 371 Lagos',
     'HOWO 420 Nigeria',
-    'Shacman trucks Lagos',
-    'Shacman dump truck Nigeria',
     'XCMG excavator Nigeria',
     'Shantui bulldozer Lagos',
     'truck engine spare parts Lagos',
@@ -61,7 +63,6 @@ export const metadata: Metadata = {
     'dealers and suppliers of all kinds of trucks Lagos',
     'truck spare parts Ojodu Berger',
     'buy HOWO truck Nigeria',
-    'Shacman dealer Lagos Nigeria',
     'CNG trucks Lagos Nigeria',
     'CNG trucks for sale Nigeria',
     'compressed natural gas trucks Lagos',
@@ -80,8 +81,8 @@ export const metadata: Metadata = {
   authors: [{ name: 'Oludare Investment Ltd' }],
   creator: 'Oludare Investment Ltd',
   openGraph: {
-    title: 'Oludare Investment Ltd | HOWO Sino Trucks & Heavy Machinery Dealers Lagos',
-    description: 'RC 1042746. Dealers and Suppliers of All Kinds of Trucks, Heavy Machinery and Construction Equipment in Lagos, Nigeria. HOWO Sino Trucks, Shacman, XCMG, Shantui.',
+    title: 'Oludare Investment Ltd | Shacman & HOWO Sino Trucks Dealers Lagos',
+    description: 'RC 1042746. Dealers and Suppliers of All Kinds of Trucks, Heavy Machinery and Construction Equipment in Lagos, Nigeria. Shacman, HOWO Sino Trucks, XCMG, Shantui.',
     url: 'https://oludareinvestment.com',
     siteName: 'Oludare Investment Ltd',
     locale: 'en_NG',
@@ -116,7 +117,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     "name": "Oludare Investment Ltd",
     "alternateName": ["OIL", "Oludare Investment"],
-    "description": "Dealers and Suppliers of All Kinds of Trucks, Heavy Machinery and Construction Equipment. HOWO Sino Trucks, Shacman, XCMG, Shantui, CAT.",
+    "description": "Dealers and Suppliers of All Kinds of Trucks, Heavy Machinery and Construction Equipment. Shacman, HOWO Sino Trucks, XCMG, Shantui, CAT.",
     "url": "https://oludareinvestment.com",
     "telephone": ["+2348020890065", "+2348105955892"],
     "email": "Oludareinvestmentltd@gmail.com",
@@ -148,8 +149,8 @@ export default function RootLayout({
       "@type": "OfferCatalog",
       "name": "Trucks and Heavy Machinery",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "HOWO Sino Trucks" } },
         { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Shacman Dump Trucks" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "HOWO Sino Trucks" } },
         { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Cement Mixer Trucks" } },
         { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Crane Trucks" } },
         { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Flatbed Trucks" } },

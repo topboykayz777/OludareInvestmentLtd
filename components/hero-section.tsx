@@ -9,6 +9,12 @@ const WHATSAPP_URL = "https://wa.me/2348105955892?text=Hello%2C%20I%27m%20intere
 
 const slides = [
   {
+    src: "/images/trucks/shacman-fleet-green.jpg",
+    alt: "Fleet of green Shacman trucks at Oludare Investment Ltd yard in Lagos",
+    headline: "Premium Shacman Fleet in Lagos",
+    sub: "We supply the most reliable Shacman dump trucks and tippers for your heavy-duty projects."
+  },
+  {
     src: "/images/trucks/howo-trucks-fleet-4-white-yard.jpg",
     alt: "Fleet of HOWO trucks at Oludare Investment Ltd yard in Lagos",
     headline: "Your Trusted Truck Dealer in Lagos",
@@ -31,12 +37,6 @@ const slides = [
     alt: "Low-bed trailers and dump trailers at Oludare Investment yard",
     headline: "Trailers Built for Heavy Loads",
     sub: "Low-beds, flatbeds, side-wall trailers -- all available and ready for delivery across Nigeria."
-  },
-  {
-    src: "/images/trucks/howo-dump-trucks-fleet-white.jpg",
-    alt: "HOWO dump trucks lined up in warehouse for sale in Lagos",
-    headline: "Dump Trucks for Construction & Mining",
-    sub: "Brand new and pre-owned tippers in stock. Various capacities to suit your project scale."
   },
 ]
 

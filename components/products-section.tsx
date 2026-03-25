@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 const products = [
   {
     title: "Dump Trucks & Tippers",
-    description: "HOWO Sino Trucks and Shacman dump trucks for construction, mining and earth-moving. Various tonnages available.",
+    description: "Shacman and HOWO Sino Trucks dump trucks for construction, mining and earth-moving. Various tonnages available.",
     images: [
       { src: "/images/trucks/shacman-f3000-dump-truck-orange.jpg", alt: "Shacman F3000 dump truck for sale Lagos Nigeria" },
       { src: "/images/trucks/howo-sinotruck-dump-white.jpg", alt: "HOWO Sino Truck dump truck for sale Lagos Nigeria" },
