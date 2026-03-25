@@ -11,14 +11,28 @@ export function VideoSection() {
           </h2>
         </div>
         
-        <div style={{ width: '100%', maxWidth: '1000px', margin: '0 auto', overflow: 'hidden', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
+        <div style={{ 
+          width: '100%', 
+          maxWidth: '1000px', 
+          margin: '0 auto', 
+          overflow: 'hidden', 
+          borderRadius: '12px', 
+          boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+          aspectRatio: '16 / 9',
+          position: 'relative'
+        }}>
           <video 
             key="oludare-permanent-hero"
             autoPlay 
             muted 
             loop 
             playsInline 
-            style={{ width: '100%', height: 'auto', display: 'block' }}
+            style={{ 
+              width: '100%', 
+              height: '100%', 
+              display: 'block',
+              objectFit: 'cover'
+            }}
           >
             <source src="https://res.cloudinary.com/dxb1zqlp0/video/upload/v1774399169/hero_2_vcahzr.mp4" type="video/mp4" />
             Your browser does not support the video tag.
