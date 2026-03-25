@@ -3,7 +3,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Clock, User } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const articles = [
   {
@@ -39,14 +38,9 @@ export function BlogSection() {
   return (
     <section id="blog" className="bg-muted py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="mb-14 flex flex-col items-center justify-between gap-6 md:flex-row md:items-end">
-          <div className="text-center md:text-left">
-            <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">Knowledge Base</p>
-            <h2 className="text-3xl font-bold text-foreground lg:text-4xl">Industry Insights & Guides</h2>
-          </div>
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-            View All Articles <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+        <div className="mb-14 text-center md:text-left">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">Knowledge Base</p>
+          <h2 className="text-3xl font-bold text-foreground lg:text-4xl">Industry Insights & Guides</h2>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
