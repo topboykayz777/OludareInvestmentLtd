@@ -52,11 +52,12 @@ export function Header() {
 
       <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-primary shadow-2xl" : "bg-primary/95 backdrop-blur-sm"}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
-          {/* Logo - Fixed to point to root / */}
+          {/* Logo - Fixed to point to root / and close mobile menu */}
           <Link 
             href="/" 
             className="flex items-center text-primary-foreground transition-opacity hover:opacity-90 focus:outline-none"
             aria-label="Oludare Investment Ltd Home"
+            onClick={() => setMobileOpen(false)}
           >
             <OilLogoBrand size="lg" />
           </Link>
