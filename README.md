@@ -20,4 +20,4 @@
 This system is built for reliability. By leveraging the latest TypeScript 5.7 standards and a "No-Hydration-Error" architecture, Oludare Investment maintains a perfect Lighthouse performance score. The platform is optimized for the Nigerian logistical market, ensuring low-latency access even on constrained network infrastructures.
 
 ---
-*Built with precision and AI-Augmented Logic by [Your Name]*
+*Built with precision and AI-Augmented Logic by kayz*
