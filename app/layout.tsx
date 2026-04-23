@@ -22,11 +22,12 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'Oludare Investment Ltd (OIL) | Shacman & HOWO Sino Trucks Dealer Lagos Nigeria',
-  description: 'Oludare Investment Ltd (OIL) - RC 1042746. Leading Shacman and HOWO Sino Trucks dealer in Lagos. We supply dump trucks, cement mixers, excavators, and heavy machinery across Nigeria. Visit our yard at Ojodu Berger.',
+  description: 'Oludare Investment Ltd (OIL) - RC 1042746. Leading Shacman, HOWO Sino Trucks, XCMG, and SDLG dealer in Lagos. We supply dump trucks, cement mixers, excavators, and heavy machinery across Nigeria. Visit our yard at Ojodu Berger.',
   keywords: [
     'Shacman trucks Lagos', 'Shacman dump truck Nigeria', 'HOWO Sino Trucks Lagos', 'HOWO Sino Trucks Nigeria',
+    'XCMG excavator Nigeria', 'SDLG wheel loader Lagos', 'Shantui bulldozer Nigeria', 'Caterpillar equipment Lagos',
     'trucks in Lagos', 'truck dealers Nigeria', 'heavy machinery Lagos', 'Oludare Investment', 'OIL trucks Lagos',
-    'trucks Ojodu Berger', 'CNG trucks Lagos Nigeria', 'HOWO 371 Lagos', 'XCMG excavator Nigeria'
+    'trucks Ojodu Berger', 'CNG trucks Lagos Nigeria', 'HOWO 371 Lagos', 'truck spare parts Lagos', 'HOWO engine Nigeria'
   ],
   icons: {
     icon: '/images/logo/oil-logo-icon.jpg',
@@ -54,7 +55,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     "name": "Oludare Investment Ltd",
     "alternateName": "OIL",
-    "description": "Official dealer of Shacman and HOWO Sino Trucks in Nigeria. RC 1042746.",
+    "description": "Official dealer of Shacman, HOWO Sino Trucks, XCMG, and SDLG in Nigeria. RC 1042746.",
     "url": "https://oludareinvestment.com",
     "telephone": ["+2348020890065", "+2348105955892"],
     "address": {
@@ -72,6 +73,8 @@ export default function RootLayout({
         { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Shacman F3000 Dump Truck" } },
         { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "HOWO Sino Truck 371" } },
         { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "XCMG Excavators" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "SDLG Wheel Loaders" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Shantui Bulldozers" } },
         { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "CNG Trucks" } }
       ]
     }
