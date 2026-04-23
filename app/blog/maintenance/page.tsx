@@ -3,6 +3,14 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Clock, User, Calendar, ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import { Breadcrumbs } from "@/components/breadcrumbs"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "How to Maintain Your HOWO 371 Engine in Nigeria | OIL Blog",
+  description: "Expert guide on maintaining Sinotruk HOWO 371 engines in Nigeria. Tips on oil changes, air filters, and cooling systems for heavy-duty trucks.",
+  keywords: ["HOWO 371 maintenance", "Sinotruk engine repair Lagos", "truck maintenance Nigeria", "HOWO spare parts Lagos"],
+}
 
 export default function MaintenanceBlog() {
   return (
@@ -10,9 +18,7 @@ export default function MaintenanceBlog() {
       <Header />
       <article className="bg-background py-20 lg:py-32">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
-          <Link href="/#blog" className="mb-8 inline-flex items-center gap-2 text-sm font-bold text-accent hover:underline">
-            <ArrowLeft className="h-4 w-4" /> Back to Knowledge Base
-          </Link>
+          <Breadcrumbs items={[{ label: "Knowledge Base", href: "/#blog" }, { label: "HOWO Maintenance" }]} />
           
           <h1 className="mb-6 text-4xl font-black text-foreground lg:text-6xl leading-tight">
             How to Maintain Your HOWO 371 Engine in Nigeria
@@ -27,7 +33,7 @@ export default function MaintenanceBlog() {
           <div className="relative mb-12 aspect-video overflow-hidden rounded-3xl shadow-2xl">
             <Image
               src="/images/spare-parts/howo-diesel-engine-with-filters.jpg"
-              alt="HOWO 371 Engine Maintenance"
+              alt="HOWO 371 Engine Maintenance Guide for Nigerian Truck Owners"
               fill
               className="object-cover"
             />

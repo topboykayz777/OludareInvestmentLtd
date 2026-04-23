@@ -3,6 +3,14 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Clock, User, Calendar, ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import { Breadcrumbs } from "@/components/breadcrumbs"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Best Excavators for Dredging & Sand Winning in Lagos | OIL Blog",
+  description: "Guide to choosing excavators for dredging in Nigeria. Why XCMG and CAT amphibious models are the top choice for Lagos swampy terrains.",
+  keywords: ["dredging excavator Lagos", "amphibious excavator Nigeria", "XCMG excavator price Lagos", "sand winning equipment"],
+}
 
 export default function ExcavatorBlog() {
   return (
@@ -10,9 +18,7 @@ export default function ExcavatorBlog() {
       <Header />
       <article className="bg-background py-20 lg:py-32">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
-          <Link href="/#blog" className="mb-8 inline-flex items-center gap-2 text-sm font-bold text-accent hover:underline">
-            <ArrowLeft className="h-4 w-4" /> Back to Knowledge Base
-          </Link>
+          <Breadcrumbs items={[{ label: "Knowledge Base", href: "/#blog" }, { label: "Excavator Guide" }]} />
           
           <h1 className="mb-6 text-4xl font-black text-foreground lg:text-6xl leading-tight">
             Choosing the Right Excavator for Dredging Projects
@@ -27,7 +33,7 @@ export default function ExcavatorBlog() {
           <div className="relative mb-12 aspect-video overflow-hidden rounded-3xl shadow-2xl">
             <Image
               src="/images/excavators/cat-320-amphibious-excavator.jpg"
-              alt="Amphibious Excavator for Dredging"
+              alt="Amphibious Excavator Operating in Lagos Swamp for Dredging"
               fill
               className="object-cover"
             />

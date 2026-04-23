@@ -37,8 +37,26 @@ const faqs = [
 export function FaqSection() {
   const [open, setOpen] = useState<number | null>(0)
 
+  // FAQ Schema for Google Rich Snippets
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  }
+
   return (
     <section className="bg-muted py-16 lg:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
         <div className="mb-14 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">FAQ</p>

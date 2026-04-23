@@ -106,8 +106,36 @@ export function ProductsSection() {
     })
   }, [activeCategory, activeBrand])
 
+  // Product Schema for Google
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": products.map((p, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "item": {
+        "@type": "Product",
+        "name": p.title,
+        "description": p.description,
+        "brand": {
+          "@type": "Brand",
+          "name": p.brand
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "priceCurrency": "NGN"
+        }
+      }
+    }))
+  }
+
   return (
     <section id="products" className="bg-secondary py-16 lg:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mb-14 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">Our Products</p>
