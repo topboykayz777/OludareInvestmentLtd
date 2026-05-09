@@ -4,13 +4,23 @@ import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
-// SEO constants – defined first to avoid circular references and be in scope for all uses
+// SEO constants – moved to top of file to ensure they're in scope
 const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Shacman & HOWO Sino Trucks Dealer Lagos Nigeria'
 const SITE_DESCRIPTION =
   'Oludare Investment Ltd (OIL) - RC 1042746. Leading Shacman, HOWO Sino Trucks, XCMG, and SDLG dealer in Lagos. We supply dump trucks, cement mixers, excavators, and heavy machinery across Nigeria.'
 const SITE_URL = 'https://oludareinvestment.com'
 const SITE_IMAGE = '/images/logo/oil-logo-full.jpg'
 const TWITTER_SITE = '@OludareInvestment'
+
+const geistSans = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist-sans',
+})
+
+const geistMono = Geist_Mono({
+  subsets: ['latin'],
+  variable: '--font-geist-mono',
+})
 
 // Build the metadata object after all constants are known
 export const metadata: Metadata = {
@@ -73,8 +83,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Safe keywords join – keywords is a string[] but TypeScript narrows only after null check */}
-        <meta name="keywords" content={metadata.keywords?.join(', ')} />
+        {/* Fixed keywords join – cast to array to ensure join method exists */}
+        <meta name="keywords" content={(metadata.keywords as string[]).join(', ')} />
         <meta property="og:title" content={String(metadata.title)} />
         <meta property="og:description" content={String(metadata.description)} />
         <meta property="og:url" content={SITE_URL} />
@@ -89,7 +99,8 @@ export default function RootLayout({
         <meta name="twitter:site" content={TWITTER_SITE} />
 
         {/* JSON‑LD scripts – must use proper closing tags, not self‑closing /> */}
-        <script          type="application/ld+json"
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
