@@ -1,6 +1,7 @@
-import Link from "next/link"
-import { OilLogoBrand } from "@/components/oil-logo"
-import { MapPin, Phone, Mail, Globe } from "lucide-react"
+{/* Footer component with added social media links */}
+import Link from "next/link";
+import { OilLogoBrand } from "@/components/oil-logo";
+import { MapPin, Phone, Mail, Globe } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -8,7 +9,7 @@ const quickLinks = [
   { label: "Our Products", href: "/#products" },
   { label: "Our Services", href: "/#services" },
   { label: "Contact Us", href: "/#contact" },
-]
+];
 
 const productLinks = [
   "Shacman Dump Trucks",
@@ -18,14 +19,14 @@ const productLinks = [
   "Excavators & Loaders",
   "Low-Bed Trailers",
   "Genuine Spare Parts",
-]
+];
 
 const serviceAreas = [
   "Lagos State", "Abuja FCT", "Port Harcourt", "Kano", "Ibadan", "Enugu", "Kaduna", "Benin City"
-]
+];
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#081129] text-white overflow-hidden">
@@ -102,8 +103,7 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-accent shrink-0" />
                 <p className="text-sm text-white/50 leading-relaxed">
                   209, Lagos/Ibadan Express Way,<br />
-                  Ojodu Berger, Lagos State, Nigeria
-                </p>
+                  Ojodu Berger, Lagos State                </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
@@ -136,8 +136,13 @@ export function Footer() {
             <Link href="/privacy" className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-accent transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-accent transition-colors">Terms of Service</Link>
           </div>
+          {/* Social Media Links */}
+          <div className="flex gap-6">
+            <a href="https://www.facebook.com/share/1GUnFNG49Z/" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-accent transition-colors mr-3">Facebook</a>
+            <a href="https://instagram.com/oludareinvestmentltd" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-accent transition-colors">Instagram</a>
+          </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
