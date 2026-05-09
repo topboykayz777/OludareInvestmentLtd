@@ -113,7 +113,8 @@ export function Header() {
           {/* Mobile Toggle */}
           <div className="flex items-center gap-2 lg:hidden">
             <ThemeToggle />
-            <button              className="text-primary-foreground p-2"
+            <button
+              className="text-primary-foreground p-2"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
             >
