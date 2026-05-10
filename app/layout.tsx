@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
-// SEO constants – moved to top of file to ensure they're in scope
+// SEO constants
 const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Shacman & HOWO Sino Trucks Dealer Lagos Nigeria'
 const SITE_DESCRIPTION =
   'Oludare Investment Ltd (OIL) - RC 1042746. Leading Shacman, HOWO Sino Trucks, XCMG, and SDLG dealer in Lagos. We supply dump trucks, cement mixers, excavators, and heavy machinery across Nigeria.'
@@ -22,7 +22,6 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
 })
 
-// Build the metadata object after all constants are known
 export const metadata: Metadata = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
@@ -58,6 +57,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: 'Oludare Investment Ltd',
     images: [{ url: SITE_IMAGE, width: 1200, height: 630 }],
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
@@ -68,7 +68,6 @@ export const metadata: Metadata = {
   },
 }
 
-// Remove the invalid `locale` property – it doesn't exist on Next.js Metadata type
 export const viewport: Viewport = {
   themeColor: '#1B2D6B',
   width: 'device-width',
@@ -82,23 +81,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Fixed keywords join – cast to array to ensure join method exists */}
-        <meta name="keywords" content={(metadata.keywords as string[]).join(', ')} />
-        <meta property="og:title" content={String(metadata.title)} />
-        <meta property="og:description" content={String(metadata.description)} />
-        <meta property="og:url" content={SITE_URL} />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content={SITE_IMAGE} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={String(metadata.title)} />
-        <meta name="twitter:description" content={String(metadata.description)} />
-        <meta name="twitter:image" content={SITE_IMAGE} />
-        <meta name="twitter:site" content={TWITTER_SITE} />
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          {children}
+        </ThemeProvider>
+        <Analytics />
 
-        {/* JSON‑LD scripts – must use proper closing tags, not self‑closing /> */}
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -151,7 +142,7 @@ export default function RootLayout({
               },
             }),
           }}
-        ></script>
+        />
 
         <script
           type="application/ld+json"
@@ -181,7 +172,7 @@ export default function RootLayout({
                   name: 'Do you sell brand new or used trucks?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'We sell both new and certified pre‑owned trucks with full inspection reports.',
+                    text: 'We sell both new and certified pre-owned trucks with full inspection reports.',
                   },
                 },
                 {
@@ -197,7 +188,7 @@ export default function RootLayout({
                   name: 'Do you deliver trucks outside Lagos?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'We deliver nationwide to all 36 states of Nigeria with door‑to‑door service.',
+                    text: 'We deliver nationwide to all 36 states of Nigeria with door-to-door service.',
                   },
                 },
                 {
@@ -211,15 +202,7 @@ export default function RootLayout({
               ],
             }),
           }}
-        ></script>
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
-      >
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          {children}
-        </ThemeProvider>
-        <Analytics />
+        />
       </body>
     </html>
   )
