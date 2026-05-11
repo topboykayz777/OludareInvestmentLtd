@@ -5,19 +5,18 @@ import Image from "next/image"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
 
 const gallery = [
-  { src: "/images/trucks/shacman-fleet-green.jpg", alt: "Shacman F3000 fleet at Oludare Investment yard", label: "Shacman Fleet" },
-  { src: "/images/trucks/howo-trucks-fleet-4-white-yard.jpg", alt: "HOWO trucks fleet in yard", label: "HOWO Fleet" },
-  { src: "/images/excavators/cat-320-amphibious-excavator.jpg", alt: "CAT 320 amphibious excavator", label: "CAT Excavator" },
-  { src: "/images/loaders/liugong-wheel-loader.jpg", alt: "LiuGong wheel loader", label: "LiuGong Loader" },
-  { src: "/images/spare-parts/howo-engines-factory-production-line.jpg", alt: "HOWO engines on production line", label: "Engine Line" },
-  { src: "/images/drilling-rigs/crawler-drilling-rigs-warehouse.jpg", alt: "Crawler drilling rigs in warehouse", label: "Drilling Rigs" },
-  { src: "/images/bulldozers/shantui-sd22-bulldozer.jpg", alt: "Shantui SD22 bulldozer", label: "Shantui Dozer" },
-  { src: "/images/road-construction/saao-single-drum-road-roller.jpg", alt: "SAAO road roller", label: "Road Roller" },
-  { src: "/images/spare-parts/howo-371-cabins-wrapped-red-white.jpg", alt: "HOWO 371 truck cabins", label: "Truck Cabins" },
-  { src: "/images/trailers/sidewall-cargo-trailer-grey-3axle.jpg", alt: "Side-wall cargo trailer", label: "Cargo Trailer" },
-  { src: "/images/excavators/cat-320cl-amphibious-excavator.jpg", alt: "CAT 320CL amphibious excavator", label: "CAT 320CL" },
-  { src: "/images/spare-parts/howo-gearbox-on-chain-hoist.jpg", alt: "HOWO gearbox on chain hoist", label: "Gearbox" },
-  { src: "/images/road-construction/xcmg-xp203-pneumatic-tire-roller.jpg", alt: "XCMG pneumatic tire roller", label: "Tire Roller" },
+  { src: "/images/trucks/howo-dump-yellow-fleet.jpg", alt: "Yellow HOWO dump trucks fleet at OIL yard", label: "HOWO Yellow Fleet" },
+  { src: "/images/trucks/shacman-orange-fleet.jpg", alt: "Orange Shacman dump trucks fleet", label: "Shacman Fleet" },
+  { src: "/images/trucks/howo-dump-white-fleet.jpg", alt: "White HOWO dump trucks fleet", label: "HOWO White Fleet" },
+  { src: "/images/trucks/shacman-green-fleet.jpg", alt: "Green Shacman tractor heads fleet", label: "Shacman Tractors" },
+  { src: "/images/excavators/liugong-fleet-yard.jpg", alt: "LiuGong excavators and loaders", label: "LiuGong Machinery" },
+  { src: "/images/road-construction/xcmg-rollers-fleet.jpg", alt: "XCMG road rollers fleet", label: "XCMG Rollers" },
+  { src: "/images/trucks/howo-light-truck-white.jpg", alt: "HOWO light box truck", label: "Light Trucks" },
+  { src: "/images/trucks/howo-water-tanker-white.jpg", alt: "HOWO water tanker truck", label: "Water Tankers" },
+  { src: "/images/machinery/xcmg-forklift-yellow.jpg", alt: "XCMG forklift", label: "XCMG Forklifts" },
+  { src: "/images/spare-parts/weichai-engine-green.jpg", alt: "Weichai engine assembly", label: "Engine Stock" },
+  { src: "/images/trailers/dump-trailer-black-side.jpg", alt: "Dump trailer side view", label: "Dump Trailers" },
+  { src: "/images/road-construction/cat-grader-140h.jpg", alt: "Caterpillar 140H motor grader", label: "CAT Graders" },
 ]
 
 export function GallerySection() {

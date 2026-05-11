@@ -1,11 +1,11 @@
 "use client"
 
-import { useState, useEffect, useMemo } from "react"
+import { useState, useMemo } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ProductDetailModal } from "@/components/product-detail-modal"
-import { Search, Filter } from "lucide-react"
+import { Filter } from "lucide-react"
 
 const products = [
   {
@@ -14,8 +14,8 @@ const products = [
     category: "Trucks",
     title: "Shacman F3000 Dump Truck",
     description: "Heavy-duty tipper for construction and mining. 6x4 and 8x4 configurations available.",
-    images: [{ src: "/images/trucks/shacman-f3000-dump-truck-orange.jpg", alt: "Shacman F3000 dump truck" }],
-    count: "8+ in stock",
+    images: [{ src: "/images/trucks/shacman-orange-close.jpg", alt: "Shacman F3000 dump truck" }],
+    count: "10+ in stock",
     hp: "380HP",
     engine: "Weichai WP10.380E22"
   },
@@ -25,73 +25,71 @@ const products = [
     category: "Trucks",
     title: "HOWO Sino Truck 371",
     description: "The industry standard for reliability in Nigeria. Perfect for long-haul and site work.",
-    images: [{ src: "/images/trucks/howo-sinotruck-dump-white.jpg", alt: "HOWO Sino Truck 371" }],
-    count: "12+ in stock",
+    images: [{ src: "/images/trucks/howo-dump-white-close.jpg", alt: "HOWO Sino Truck 371" }],
+    count: "15+ in stock",
     hp: "371HP",
     engine: "WD615.47"
   },
   {
-    id: "cng-1",
+    id: "light-1",
     brand: "HOWO",
-    category: "Trucks",
-    title: "HOWO CNG Tractor Head",
-    description: "Fuel-efficient compressed natural gas trucks. Reduce your fleet operating costs significantly.",
-    images: [{ src: "/images/trucks/howo-cng-trucks-fleet.jpg", alt: "HOWO CNG trucks" }],
+    category: "Light Trucks",
+    title: "HOWO Light Box Truck",
+    description: "Versatile 4x2 light trucks for urban logistics and distribution. Available in box and refrigerated types.",
+    images: [{ src: "/images/trucks/howo-light-truck-white.jpg", alt: "HOWO light truck" }],
+    count: "Multiple units",
+    hp: "110HP - 160HP"
+  },
+  {
+    id: "tanker-1",
+    brand: "HOWO",
+    category: "Specialized",
+    title: "HOWO Water Tanker",
+    description: "High-capacity water tankers for construction sites and municipal services. Corrosion-resistant tanks.",
+    images: [{ src: "/images/trucks/howo-water-tanker-white.jpg", alt: "HOWO water tanker" }],
     count: "Available",
-    hp: "420HP",
-    engine: "T12.42-50 CNG"
+    hp: "290HP - 371HP"
   },
   {
-    id: "mixer-1",
-    brand: "HOWO",
-    category: "Construction",
-    title: "HOWO Cement Mixer",
-    description: "10m³ - 12m³ transit mixers for concrete delivery. High-strength drum and reliable hydraulics.",
-    images: [{ src: "/images/trucks/sinotruk-cement-mixer-white.jpg", alt: "Sinotruk HOWO cement mixer" }],
-    count: "6+ in stock",
-    hp: "371HP"
-  },
-  {
-    id: "excavator-1",
+    id: "forklift-1",
     brand: "XCMG",
     category: "Machinery",
-    title: "XCMG XE335G Excavator",
-    description: "Powerful earthmover for large scale construction and mining projects.",
-    images: [{ src: "/images/excavators/xcmg-xe335g-excavators-fleet.jpg", alt: "XCMG excavator" }],
-    count: "Multiple units",
-    hp: "250HP"
+    title: "XCMG Diesel Forklift",
+    description: "Industrial forklifts for warehouse and yard operations. 3-ton to 10-ton lifting capacities.",
+    images: [{ src: "/images/machinery/xcmg-forklift-yellow.jpg", alt: "XCMG forklift" }],
+    count: "In stock"
   },
   {
-    id: "loader-1",
-    brand: "SDLG",
+    id: "roller-1",
+    brand: "LiuGong",
     category: "Machinery",
-    title: "SDLG LG953 Wheel Loader",
-    description: "Versatile loader for material handling, clearing, and site preparation.",
-    images: [{ src: "/images/loaders/sdlg-lg953-wheel-loaders-fleet.jpg", alt: "SDLG wheel loader" }],
-    count: "5+ in stock"
+    title: "LiuGong Road Roller",
+    description: "Single drum vibratory rollers for road compaction and site preparation.",
+    images: [{ src: "/images/road-construction/liugong-roller-yellow.jpg", alt: "LiuGong road roller" }],
+    count: "4+ in stock"
   },
   {
-    id: "trailer-1",
+    id: "trailer-dump",
     brand: "Generic",
     category: "Trailers",
-    title: "Heavy Duty Low-Bed Trailer",
-    description: "3-axle and 4-axle configurations for transporting heavy machinery and equipment.",
-    images: [{ src: "/images/trailers/blue-lowbed-trailer-4-views.jpg", alt: "Low-bed trailer" }],
+    title: "Heavy Duty Dump Trailer",
+    description: "Rear-tipping trailers for bulk material transport. High-strength steel construction.",
+    images: [{ src: "/images/trailers/dump-trailer-black-side.jpg", alt: "Dump trailer" }],
     count: "Various types"
   },
   {
-    id: "parts-1",
-    brand: "HOWO",
+    id: "parts-engine",
+    brand: "Weichai",
     category: "Parts",
-    title: "HOWO 371 Engine Assembly",
-    description: "Complete brand new engine assemblies and individual spare parts in stock.",
-    images: [{ src: "/images/spare-parts/howo-diesel-engine-new-pallet.jpg", alt: "HOWO engine" }],
+    title: "Weichai Engine Assembly",
+    description: "Complete brand new engine assemblies for HOWO and Shacman trucks. Genuine factory units.",
+    images: [{ src: "/images/spare-parts/weichai-engine-green.jpg", alt: "Weichai engine" }],
     count: "Full range"
   }
 ]
 
-const categories = ["All", "Trucks", "Machinery", "Construction", "Trailers", "Parts"]
-const brands = ["All", "Shacman", "HOWO", "XCMG", "SDLG", "Shantui"]
+const categories = ["All", "Trucks", "Light Trucks", "Machinery", "Trailers", "Parts", "Specialized"]
+const brands = ["All", "Shacman", "HOWO", "XCMG", "LiuGong", "Weichai"]
 
 export function ProductsSection() {
   const [activeCategory, setActiveCategory] = useState("All")
@@ -106,36 +104,8 @@ export function ProductsSection() {
     })
   }, [activeCategory, activeBrand])
 
-  // Product Schema for Google
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": products.map((p, i) => ({
-      "@type": "ListItem",
-      "position": i + 1,
-      "item": {
-        "@type": "Product",
-        "name": p.title,
-        "description": p.description,
-        "brand": {
-          "@type": "Brand",
-          "name": p.brand
-        },
-        "offers": {
-          "@type": "Offer",
-          "availability": "https://schema.org/InStock",
-          "priceCurrency": "NGN"
-        }
-      }
-    }))
-  }
-
   return (
     <section id="products" className="bg-secondary py-16 lg:py-24">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mb-14 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">Our Products</p>

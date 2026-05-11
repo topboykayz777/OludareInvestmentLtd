@@ -38,8 +38,8 @@ export function AboutSection() {
               <div className="space-y-4">
                 <div className="relative h-48 sm:h-56 overflow-hidden rounded-2xl shadow-2xl group">
                   <Image
-                    src="/images/trucks/howo-sinotruk-tractor-head-white.jpg"
-                    alt="HOWO Sinotruk tractor head for sale in Lagos Nigeria"
+                    src="/images/trucks/howo-dump-yellow-fleet.jpg"
+                    alt="HOWO dump trucks fleet at Oludare Investment yard Lagos"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 1024px) 50vw, 25vw"
@@ -47,8 +47,8 @@ export function AboutSection() {
                 </div>
                 <div className="relative h-32 sm:h-40 overflow-hidden rounded-2xl shadow-xl group">
                   <Image
-                    src="/images/spare-parts/howo-diesel-engine-with-filters.jpg"
-                    alt="Genuine HOWO diesel engine spare parts Lagos"
+                    src="/images/spare-parts/weichai-engine-green.jpg"
+                    alt="Genuine Weichai engine spare parts Lagos"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 1024px) 50vw, 25vw"
@@ -58,8 +58,8 @@ export function AboutSection() {
               <div className="space-y-4 pt-8">
                 <div className="relative h-32 sm:h-40 overflow-hidden rounded-2xl shadow-xl group">
                   <Image
-                    src="/images/loaders/shacman-wheel-loaders-fleet-yard.jpg"
-                    alt="Shacman wheel loaders inventory at OIL Lagos"
+                    src="/images/trucks/shacman-green-fleet.jpg"
+                    alt="Shacman tractor heads inventory at OIL Lagos"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 1024px) 50vw, 25vw"
@@ -67,8 +67,8 @@ export function AboutSection() {
                 </div>
                 <div className="relative h-48 sm:h-56 overflow-hidden rounded-2xl shadow-2xl group">
                   <Image
-                    src="/images/road-construction/shantui-motor-grader-yellow.jpg"
-                    alt="Shantui motor grader for road construction Nigeria"
+                    src="/images/road-construction/liugong-roller-yellow.jpg"
+                    alt="LiuGong road roller for construction Nigeria"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 1024px) 50vw, 25vw"
@@ -77,7 +77,7 @@ export function AboutSection() {
               </div>
             </div>
             
-            {/* Floating stat badge - Adjusted positioning to prevent overlap */}
+            {/* Floating stat badge */}
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 rounded-2xl bg-primary p-1 shadow-2xl animate-pulse-glow w-[280px] sm:w-auto">
               <div className="rounded-xl border border-white/10 bg-primary px-6 py-4 sm:px-8 sm:py-5 text-center">
                 <p className="text-2xl sm:text-3xl font-black text-accent">7+ YEARS</p>
