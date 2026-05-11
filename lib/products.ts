@@ -1,5 +1,5 @@
 export const products = [
-  // === TRUCKS ===
+  // === TRUCKS (NEW) ===
   {
     id: "shacman-f3000-orange",
     brand: "Shacman",
@@ -44,26 +44,27 @@ export const products = [
     engine: "Weichai WP12",
     isUsed: false
   },
+
+  // === USED TRUCKS (PHASE 3 ADDITIONS) ===
   {
-    id: "howo-cng-truck",
+    id: "used-howo-371-2021",
     brand: "HOWO",
     category: "Trucks",
-    title: "HOWO CNG Dump Truck",
-    description: "Compressed Natural Gas powered tipper. Reduce fuel costs by up to 40% in Nigeria.",
-    images: [{ src: "/images/trucks/howo-cng-trucks-fleet.jpg", alt: "HOWO CNG truck" }],
-    hp: "380HP",
-    engine: "T12.38-50 CNG",
-    isUsed: false
+    title: "Used HOWO 371 Tipper (2021)",
+    description: "Clean pre-owned unit with low mileage. Fully serviced and inspected at our Berger yard.",
+    images: [{ src: "/images/trucks/howo-dump-white-fleet.jpg", alt: "Used HOWO 371" }],
+    hp: "371HP",
+    isUsed: true
   },
   {
-    id: "howo-mixer-white",
-    brand: "HOWO",
+    id: "used-shacman-f3000-2020",
+    brand: "Shacman",
     category: "Trucks",
-    title: "Sinotruk Cement Mixer",
-    description: "10m³ - 12m³ capacity transit mixers for ready-mix concrete operations.",
-    images: [{ src: "/images/trucks/sinotruk-cement-mixer-white.jpg", alt: "HOWO cement mixer" }],
-    hp: "371HP",
-    isUsed: false
+    title: "Used Shacman F3000 (2020)",
+    description: "Reliable used Shacman tipper. Engine and gearbox in excellent condition. Ready for site work.",
+    images: [{ src: "/images/trucks/shacman-orange-fleet.jpg", alt: "Used Shacman F3000" }],
+    hp: "380HP",
+    isUsed: true
   },
 
   // === LIGHT TRUCKS ===
@@ -87,16 +88,6 @@ export const products = [
     hp: "140HP",
     isUsed: false
   },
-  {
-    id: "howo-homan",
-    brand: "HOWO",
-    category: "Light Trucks",
-    title: "HOWO Homan Series",
-    description: "Versatile medium-duty truck for construction materials and general haulage.",
-    images: [{ src: "/images/trucks/howo-homan-light-truck.jpg", alt: "HOWO Homan" }],
-    hp: "160HP",
-    isUsed: false
-  },
 
   // === MACHINERY ===
   {
@@ -116,43 +107,6 @@ export const products = [
     title: "CAT 320 Amphibious Excavator",
     description: "Specialized swamp buggy for dredging and canal clearing in Lagos coastal areas.",
     images: [{ src: "/images/excavators/cat-320-amphibious-excavator.jpg", alt: "CAT Amphibious" }],
-    isUsed: false
-  },
-  {
-    id: "liugong-roller-yellow",
-    brand: "LiuGong",
-    category: "Machinery",
-    title: "LiuGong Road Roller",
-    description: "Single drum vibratory roller for road base compaction and asphalt finishing.",
-    images: [{ src: "/images/road-construction/liugong-roller-yellow.jpg", alt: "LiuGong Roller" }],
-    isUsed: false
-  },
-  {
-    id: "shantui-sd22",
-    brand: "Shantui",
-    category: "Machinery",
-    title: "Shantui SD22 Bulldozer",
-    description: "The industry standard for land clearing and site preparation in Nigeria.",
-    images: [{ src: "/images/bulldozers/shantui-sd22-bulldozer.jpg", alt: "Shantui SD22" }],
-    hp: "220HP",
-    isUsed: false
-  },
-  {
-    id: "cat-140h-grader",
-    brand: "Caterpillar",
-    category: "Machinery",
-    title: "CAT 140H Motor Grader",
-    description: "Precision grading for road construction and maintenance projects.",
-    images: [{ src: "/images/road-construction/cat-grader-140h.jpg", alt: "CAT 140H" }],
-    isUsed: false
-  },
-  {
-    id: "xcmg-forklift",
-    brand: "XCMG",
-    category: "Machinery",
-    title: "XCMG Diesel Forklift",
-    description: "3-ton to 5-ton industrial forklifts for warehouse and yard operations.",
-    images: [{ src: "/images/machinery/xcmg-forklift-yellow.jpg", alt: "XCMG Forklift" }],
     isUsed: false
   },
 
@@ -202,36 +156,6 @@ export const products = [
     title: "HOWO 371 Truck Cabin",
     description: "Complete cabin assembly including interior trim and dashboard components.",
     images: [{ src: "/images/spare-parts/howo-371-cabins-wrapped-red-white.jpg", alt: "HOWO Cabin" }],
-    isUsed: false
-  },
-  {
-    id: "howo-gearbox",
-    brand: "HOWO",
-    category: "Parts",
-    title: "HOWO 10-Speed Gearbox",
-    description: "Genuine HW19710 transmission for heavy-duty Sinotruk models.",
-    images: [{ src: "/images/spare-parts/howo-gearbox-in-crate.jpg", alt: "HOWO Gearbox" }],
-    isUsed: false
-  },
-
-  // === SPECIALIZED ===
-  {
-    id: "water-tanker-white",
-    brand: "HOWO",
-    category: "Specialized",
-    title: "HOWO Water Tanker (20,000L)",
-    description: "High-capacity water tanker for construction sites and dust suppression.",
-    images: [{ src: "/images/trucks/howo-water-tanker-white.jpg", alt: "Water Tanker" }],
-    hp: "290HP",
-    isUsed: false
-  },
-  {
-    id: "drilling-rig",
-    brand: "Generic",
-    category: "Specialized",
-    title: "Crawler Drilling Rig",
-    description: "Industrial borehole and foundation drilling equipment for construction.",
-    images: [{ src: "/images/drilling-rigs/crawler-drilling-rigs-warehouse.jpg", alt: "Drilling Rig" }],
     isUsed: false
   }
 ]
