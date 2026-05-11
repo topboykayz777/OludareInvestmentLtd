@@ -6,31 +6,31 @@ import { ArrowRight, Clock, User } from "lucide-react"
 
 const articles = [
   {
-    title: "HOWO 371 Price in Nigeria: 2025 Comprehensive Guide",
-    excerpt: "Everything you need to know about the current market prices for new and used HOWO 371 tippers in Lagos and across Nigeria.",
-    image: "/images/trucks/howo-dump-white-fleet.jpg",
-    date: "Mar 10, 2025",
+    title: "Shacman F3000 vs. HOWO 371: Which is the King of Nigerian Roads?",
+    excerpt: "A deep dive comparison of the two most popular truck brands in Lagos. We analyze engine power, parts availability, and resale value.",
+    image: "/images/trucks/shacman-fleet-green.jpg",
+    date: "May 20, 2025",
+    author: "Engr. Oludare",
+    readTime: "12 min read",
+    href: "/blog/shacman-vs-howo"
+  },
+  {
+    title: "5 Things to Inspect Before Buying a Used Tipper in Lagos",
+    excerpt: "Avoid being cheated! Our expert guide shows you exactly what to check when buying a used HOWO or Shacman truck at Ojodu Berger.",
+    image: "/images/trucks/howo-dump-white-close.jpg",
+    date: "May 15, 2025",
     author: "Engr. Oludare",
     readTime: "10 min read",
-    href: "/blog/howo-371-price-nigeria-2025"
+    href: "/blog/used-truck-inspection"
   },
   {
-    title: "How to Maintain Your HOWO 371 Engine in Nigeria",
-    excerpt: "Essential maintenance tips to keep your Sinotruk engine running efficiently in tropical climates and rough terrains.",
-    image: "/images/spare-parts/howo-diesel-engine-with-filters.jpg",
-    date: "Feb 15, 2025",
-    author: "Engr. Oludare",
-    readTime: "5 min read",
-    href: "/blog/maintenance"
-  },
-  {
-    title: "CNG vs Diesel: Which is Better for Your Fleet?",
-    excerpt: "A deep dive into the cost-benefit analysis of Compressed Natural Gas trucks versus traditional Diesel units in the Nigerian market.",
-    image: "/images/trucks/howo-cng-trucks-fleet.jpg",
-    date: "Jan 28, 2025",
+    title: "How to Start a Profitable Haulage Business in Nigeria (2025 Guide)",
+    excerpt: "Learn how to start and scale a tipper or trailer haulage business. Profit analysis, truck selection, and driver management tips.",
+    image: "/images/trucks/howo-dump-yellow-fleet.jpg",
+    date: "May 25, 2025",
     author: "Sales Team",
-    readTime: "8 min read",
-    href: "/blog/cng-vs-diesel"
+    readTime: "15 min read",
+    href: "/blog/haulage-business-guide"
   }
 ]
 
