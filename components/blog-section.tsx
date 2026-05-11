@@ -6,6 +6,15 @@ import { ArrowRight, Clock, User } from "lucide-react"
 
 const articles = [
   {
+    title: "HOWO 371 Price in Nigeria: 2025 Comprehensive Guide",
+    excerpt: "Everything you need to know about the current market prices for new and used HOWO 371 tippers in Lagos and across Nigeria.",
+    image: "/images/trucks/howo-dump-white-fleet.jpg",
+    date: "Mar 10, 2025",
+    author: "Engr. Oludare",
+    readTime: "10 min read",
+    href: "/blog/howo-371-price-nigeria-2025"
+  },
+  {
     title: "How to Maintain Your HOWO 371 Engine in Nigeria",
     excerpt: "Essential maintenance tips to keep your Sinotruk engine running efficiently in tropical climates and rough terrains.",
     image: "/images/spare-parts/howo-diesel-engine-with-filters.jpg",
@@ -22,15 +31,6 @@ const articles = [
     author: "Sales Team",
     readTime: "8 min read",
     href: "/blog/cng-vs-diesel"
-  },
-  {
-    title: "Choosing the Right Excavator for Dredging Projects",
-    excerpt: "Why amphibious excavators are becoming the standard for sand winning and dredging operations in Lagos and the Niger Delta.",
-    image: "/images/excavators/cat-320-amphibious-excavator.jpg",
-    date: "Jan 10, 2025",
-    author: "Project Specialist",
-    readTime: "6 min read",
-    href: "/blog/excavator-guide"
   }
 ]
 
