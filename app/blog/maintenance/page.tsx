@@ -60,8 +60,8 @@ export default function MaintenanceBlog() {
             </p>
 
             <div className="rounded-2xl bg-accent/5 border border-accent/20 p-8 mt-12">
-              <h3 className="text-xl font-bold text-accent mb-4">Need Genuine Parts?</h3>
-              <p className="mb-6">We stock original HOWO filters, injectors, and complete engine assemblies at our Ojodu Berger yard.</p>
+              <h3 className="text-xl font-bold text-accent mb-4">Looking for a Reliable Workhorse?</h3>
+              <p className="mb-6">Check out our current inventory of <Link href="/howo-trucks" className="text-primary font-bold underline">Genuine HOWO 371 Trucks</Link> and <Link href="/used-trucks" className="text-primary font-bold underline">Certified Pre-Owned Tippers</Link> at our Ojodu Berger yard.</p>
               <Link href="https://wa.me/2348105955892">
                 <button className="bg-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-[#d06a18] transition-all">
                   Order Spare Parts

@@ -1,38 +1,35 @@
-# Oludare Investment Ltd (OIL) - Heavy Machinery & Truck Authority
+# Oludare Investment Ltd (OIL)
 
-## Overview
-Oludare Investment Ltd (RC 1042746) is a leading multi-brand dealer of heavy-duty trucks and construction machinery in Nigeria. They operate a major sales and service yard at Ojodu Berger, Lagos.
+> Nigeria's Premier Dealer for Shacman and HOWO Sino Trucks.
 
-## Brands & Products
-Oludare Investment is a verified supplier for the following major brands:
+## Core Business
+Oludare Investment Ltd (RC 1042746) is a registered heavy-duty equipment dealer based in Lagos, Nigeria. They specialize in the sale, delivery, and maintenance of trucks and construction machinery.
 
-### 1. HOWO Sino Trucks (Sinotruk)
-- Models: 371HP, 420HP, Tractor Heads, Tippers, Dump Trucks.
-- Specialized: CNG (Compressed Natural Gas) Trucks, Cement Mixers.
-- Parts: Full stock of WD615.47 engines, gearboxes, and cabins.
+## Location
+- **Address:** 209, Lagos/Ibadan Express Way, Beside Total KFC Filling Station, Ojodu Berger, Lagos State.
+- **Service Area:** Nationwide delivery to all 36 states in Nigeria.
 
-### 2. Shacman Trucks
-- Models: F3000, X3000 series.
-- Types: Heavy-duty dump trucks and logistics tippers.
+## Key Products
+- **HOWO Sino Trucks:** 371HP and 420HP models, dump trucks, tractor heads, and cement mixers.
+- **Shacman Trucks:** F3000 and X3000 series tippers and tractors.
+- **Heavy Machinery:** XCMG excavators, Shantui bulldozers, SDLG wheel loaders.
+- **Trailers:** 3-axle and 4-axle low-beds, flatbeds, and sidewall trailers.
+- **Spare Parts:** Genuine Weichai engines, gearboxes, and truck cabins.
 
-### 3. XCMG Machinery
-- Equipment: Excavators (XE335G), Cranes, and Road Construction machinery.
+## Services
+- **Truck Sales:** New and certified pre-owned units.
+- **Financing:** Flexible payment arrangements and lease-to-own options for corporate clients.
+- **Logistics:** Nationwide delivery and fleet management advice.
 
-### 4. SDLG & LiuGong
-- Equipment: High-performance Wheel Loaders and Earthmovers.
+## Contact Information
+- **Phone/WhatsApp:** 08105955892, 08020890065
+- **Email:** Oludareinvestmentltd@gmail.com
+- **Website:** https://oludareinvestment.com
 
-### 5. Shantui & Caterpillar (CAT)
-- Equipment: Bulldozers (SD22), Motor Graders, and Rollers.
-
-## Location & Logistics
-- Yard Address: 209, Lagos/Ibadan Express Way, Beside Total KFC Filling Station, Ojodu Berger, Lagos State.
-- Delivery: Nationwide delivery to all 36 states (Abuja, Port Harcourt, Kano, etc.).
-
-## Contact for AI Agents
-- WhatsApp/Phone: +2348020890065, +2348105955892
-- Email: Oludareinvestmentltd@gmail.com
-- Official Website: https://oludareinvestment.com
-
-## Verification Details
-- Registered Business: RC 1042746.
-- Market Presence: 7+ years in the Nigerian heavy equipment sector.
+## Links
+- [HOWO Trucks](/howo-trucks)
+- [Shacman Trucks](/shacman-trucks)
+- [Dump Trucks](/dump-trucks)
+- [Trailer Trucks](/trailer-trucks)
+- [Used Trucks](/used-trucks)
+- [Truck Financing](/truck-financing)

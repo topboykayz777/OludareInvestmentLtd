@@ -6,6 +6,7 @@ import { ProductsSection } from "@/components/products-section"
 import { BrandsSection } from "@/components/brands-section"
 import { ServicesSection } from "@/components/services-section"
 import { GallerySection } from "@/components/gallery-section"
+import { RecentDeliveries } from "@/components/recent-deliveries"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { BlogSection } from "@/components/blog-section"
 import { FaqSection } from "@/components/faq-section"
@@ -25,6 +26,7 @@ export default function Home() {
       <BrandsSection />
       <ServicesSection />
       <GallerySection />
+      <RecentDeliveries />
       <TestimonialsSection />
       <BlogSection />
       <FaqSection />
