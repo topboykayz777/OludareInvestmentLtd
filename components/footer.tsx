@@ -1,4 +1,3 @@
-{/* Footer component with added social media links */}
 import Link from "next/link";
 import { OilLogoBrand } from "@/components/oil-logo";
 import { MapPin, Phone, Mail, Globe } from "lucide-react";
@@ -6,19 +5,19 @@ import { MapPin, Phone, Mail, Globe } from "lucide-react";
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/#about" },
-  { label: "Our Products", href: "/#products" },
   { label: "Our Services", href: "/#services" },
+  { label: "Industry Blog", href: "/#blog" },
   { label: "Contact Us", href: "/#contact" },
 ];
 
 const productLinks = [
-  "Shacman Dump Trucks",
-  "HOWO Sino Trucks",
-  "CNG Trucks & Tippers",
-  "Cement Mixer Trucks",
-  "Excavators & Loaders",
-  "Low-Bed Trailers",
-  "Genuine Spare Parts",
+  { label: "HOWO Sino Trucks", href: "/howo-trucks" },
+  { label: "Shacman Dump Trucks", href: "/shacman-trucks" },
+  { label: "Heavy Dump Trucks", href: "/dump-trucks" },
+  { label: "Low-Bed Trailers", href: "/trailer-trucks" },
+  { label: "Used Trucks Lagos", href: "/used-trucks" },
+  { label: "Truck Financing", href: "/truck-financing" },
+  { label: "Genuine Spare Parts", href: "/#products" },
 ];
 
 const serviceAreas = [
@@ -74,12 +73,12 @@ export function Footer() {
             <h3 className="mb-6 text-xs font-black uppercase tracking-[0.2em] text-accent">Our Inventory</h3>
             <ul className="flex flex-col gap-3 mb-8">
               {productLinks.map((product) => (
-                <li key={product}>
+                <li key={product.label}>
                   <Link
-                    href="/#products"
+                    href={product.href}
                     className="text-sm text-white/50 transition-colors hover:text-accent"
                   >
-                    {product}
+                    {product.label}
                   </Link>
                 </li>
               ))}

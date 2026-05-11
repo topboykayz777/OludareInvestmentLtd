@@ -2,11 +2,17 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone, Facebook, Instagram } from "lucide-react";
+import { Menu, X, Phone, Facebook, Instagram, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { OilLogoBrand } from "@/components/oil-logo";
 import { ThemeToggle } from "@/components/theme-toggle";
 import React, { useState, useEffect } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const WHATSAPP_URL = "https://wa.me/2348105955892?text=Hello%2C%20I%20am%20interested%20in%20your%20trucks%20and%20machinery.%20Please%20share%20more%20details.";
 const FACEBOOK_URL = "https://www.facebook.com/share/1GUnFNG49Z/";
@@ -15,10 +21,18 @@ const INSTAGRAM_URL = "https://instagram.com/oludareinvestmentltd";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/#about" },
-  { label: "Products", href: "/#products" },
   { label: "Services", href: "/#services" },
   { label: "Blog", href: "/#blog" },
   { label: "Contact", href: "/#contact" },
+];
+
+const truckLinks = [
+  { label: "HOWO Trucks", href: "/howo-trucks" },
+  { label: "Shacman Trucks", href: "/shacman-trucks" },
+  { label: "Dump Trucks", href: "/dump-trucks" },
+  { label: "Trailer Trucks", href: "/trailer-trucks" },
+  { label: "Used Trucks", href: "/used-trucks" },
+  { label: "Truck Financing", href: "/truck-financing" },
 ];
 
 export function Header() {
@@ -84,7 +98,34 @@ export function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
-            {navLinks.map((link) => (
+            {navLinks.slice(0, 2).map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="relative px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 transition-all hover:text-accent group"
+              >
+                {link.label}
+                <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:left-4 group-hover:w-[calc(100%-32px)]" />
+              </Link>
+            ))}
+
+            {/* Trucks Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 transition-all hover:text-accent outline-none group">
+                Trucks <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-primary border-white/10 min-w-[200px]">
+                {truckLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href} className="w-full px-4 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground/70 hover:text-accent hover:bg-white/5 transition-colors cursor-pointer">
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {navLinks.slice(2).map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -129,7 +170,7 @@ export function Header() {
 
         {/* Mobile Nav Menu */}
         {mobileOpen && (
-          <div className="fixed inset-0 top-[60px] z-50 bg-primary/98 backdrop-blur-2xl lg:hidden animate-fade-in">
+          <div className="fixed inset-0 top-[60px] z-50 bg-primary/98 backdrop-blur-2xl lg:hidden animate-fade-in overflow-y-auto">
             <nav className="flex flex-col px-6 py-8 h-full" aria-label="Mobile navigation">
               <div className="flex items-center gap-6 mb-8 pb-8 border-b border-primary-foreground/10">
                 <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/80 font-bold">
@@ -140,7 +181,35 @@ export function Header() {
                 </a>
               </div>
               
-              {navLinks.map((link) => (
+              {navLinks.slice(0, 2).map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="py-4 text-xl font-black uppercase tracking-widest text-primary-foreground/80 transition-colors hover:text-accent border-b border-primary-foreground/5"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+
+              {/* Mobile Trucks Section */}
+              <div className="py-4 border-b border-primary-foreground/5">
+                <p className="text-[10px] font-black uppercase tracking-[0.3em] text-accent mb-4">Our Trucks</p>
+                <div className="grid grid-cols-2 gap-4">
+                  {truckLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="text-sm font-bold uppercase tracking-widest text-primary-foreground/60 hover:text-accent transition-colors"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              
+              {navLinks.slice(2).map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -151,7 +220,7 @@ export function Header() {
                 </Link>
               ))}
               
-              <div className="mt-auto flex flex-col gap-4 pb-12">
+              <div className="mt-8 flex flex-col gap-4 pb-12">
                 <a href="tel:+2348020890065">
                   <Button variant="outline" className="w-full border-primary-foreground/20 text-primary-foreground bg-white/5 py-7 text-lg font-bold gap-3">
                     <Phone className="h-5 w-5 text-accent" />
