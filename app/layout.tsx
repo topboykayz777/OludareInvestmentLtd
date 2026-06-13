@@ -5,10 +5,10 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 // SEO constants
-const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Shacman & HOWO Sino Trucks Dealer Lagos Nigeria'
+const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Trusted Shacman & HOWO Truck Sourcing Agent Lagos'
 const SITE_DESCRIPTION =
-  'Oludare Investment Ltd (OIL) - RC 1042746. Leading Shacman, HOWO Sino Trucks, XCMG, and SDLG dealer in Lagos. We supply dump trucks, cement mixers, excavators, and heavy machinery across Nigeria.'
-const SITE_URL = 'https://oludareinvestment.com'
+  'Oludare Investment Ltd (RC 1042746) is Nigeria\'s premier independent truck sourcing and inspection agent at Ojodu Berger, Lagos. We source, inspect, and verify genuine HOWO, Shacman, and heavy machinery for buyers nationwide.'
+const SITE_URL = 'https://www.oludareinvestmentltd.com.ng'
 const SITE_IMAGE = '/images/logo/oil-logo-full.jpg'
 const TWITTER_SITE = '@OludareInvestment'
 
@@ -25,25 +25,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: '/',
+  },
   keywords: [
-    'Shacman trucks Lagos',
-    'Shacman dump truck Nigeria',
-    'HOWO Sino Trucks Lagos',
-    'HOWO Sino Trucks Nigeria',
-    'XCMG excavator Nigeria',
-    'SDLG wheel loader Lagos',
-    'Shantui bulldozer Nigeria',
-    'Caterpillar equipment Lagos',
-    'trucks in Lagos',
-    'truck dealers Nigeria',
-    'heavy machinery Lagos',
-    'Oludare Investment',
+    'truck sourcing agent Lagos',
+    'trusted truck broker Ojodu Berger',
+    'buy HOWO truck safely Nigeria',
+    'Shacman truck finder Lagos',
+    'Lagos truck yard inspection service',
+    'HOWO 371 price Nigeria',
+    'Shacman F3000 Lagos',
+    'heavy duty truck finder Nigeria',
+    'Oludare Investment Ltd',
     'OIL trucks Lagos',
     'trucks Ojodu Berger',
-    'CNG trucks Lagos Nigeria',
-    'HOWO 371 Lagos',
-    'truck spare parts Lagos',
-    'HOWO engine Nigeria',
+    'buy used tipper safely Lagos',
+    'independent truck inspector Nigeria',
   ],
   icons: {
     icon: SITE_IMAGE,
@@ -89,13 +88,13 @@ export default function RootLayout({
         </ThemeProvider>
         <Analytics />
 
-        {/* JSON-LD Structured Data */}
+        {/* JSON-LD Structured Data - Optimized for Local Business & Brokerage */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
+              '@type': 'ProfessionalService',
               name: 'Oludare Investment Ltd',
               url: SITE_URL,
               telephone: ['+2348020890065', '+2348105955892'],
@@ -109,87 +108,19 @@ export default function RootLayout({
               },
               image: `${SITE_URL}${SITE_IMAGE}`,
               logo: `${SITE_URL}${SITE_IMAGE}`,
-              priceRange: 'NGN 1000000-5000000',
+              priceRange: 'NGN 15000000-80000000',
+              description: 'Nigeria\'s leading independent heavy-duty truck sourcing, verification, and inspection agency based in Ojodu Berger, Lagos.',
               sameAs: [
                 'https://www.facebook.com/share/1GUnFNG49Z/',
                 'https://instagram.com/oludareinvestmentltd',
               ],
-              hasOfferCatalog: {
-                '@type': 'OfferCatalog',
-                name: 'Heavy Duty Equipment',
-                itemListElement: [
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Product',
-                      name: 'Shacman F3000 Dump Truck',
-                      offers: {
-                        '@type': 'AggregateOffer',
-                        priceCurrency: 'NGN',
-                        lowPrice: '38000000',
-                        highPrice: '65000000',
-                        offerCount: '5',
-                      },
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Product',
-                      name: 'HOWO Sino Truck 371',
-                      offers: {
-                        '@type': 'AggregateOffer',
-                        priceCurrency: 'NGN',
-                        lowPrice: '38000000',
-                        highPrice: '65000000',
-                        offerCount: '8',
-                      },
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Product',
-                      name: 'XCMG Excavator',
-                      offers: {
-                        '@type': 'AggregateOffer',
-                        priceCurrency: 'NGN',
-                        lowPrice: '25000000',
-                        highPrice: '80000000',
-                        offerCount: '3',
-                      },
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Product',
-                      name: 'SDLG Wheel Loader',
-                      offers: {
-                        '@type': 'AggregateOffer',
-                        priceCurrency: 'NGN',
-                        lowPrice: '20000000',
-                        highPrice: '45000000',
-                        offerCount: '4',
-                      },
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Product',
-                      name: 'CNG Truck',
-                      offers: {
-                        '@type': 'AggregateOffer',
-                        priceCurrency: 'NGN',
-                        lowPrice: '40000000',
-                        highPrice: '75000000',
-                        offerCount: '6',
-                      },
-                    },
-                  },
-                ],
-              },
+              areaServed: [
+                { '@type': 'AdministrativeArea', name: 'Lagos' },
+                { '@type': 'AdministrativeArea', name: 'Abuja' },
+                { '@type': 'AdministrativeArea', name: 'Port Harcourt' },
+                { '@type': 'AdministrativeArea', name: 'Kano' },
+                { '@type': 'AdministrativeArea', name: 'Ibadan' },
+              ],
             }),
           }}
         />
@@ -203,50 +134,26 @@ export default function RootLayout({
               mainEntity: [
                 {
                   '@type': 'Question',
-                  name: 'Where is Oludare Investment Ltd located?',
+                  name: 'How does Oludare Investment Ltd help me buy a truck?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'We are at 209, Lagos/Ibadan Express Way, Beside Total KFC Filling Station, Ojodu Berger, Lagos State.',
+                    text: 'We act as your trusted independent sourcing and inspection agent in Ojodu Berger, Lagos. We find the best trucks across multiple yards, run a rigorous 50-point inspection, verify the customs papers, and negotiate the best price on your behalf.',
                   },
                 },
                 {
                   '@type': 'Question',
-                  name: 'What truck brands do you sell?',
+                  name: 'Can I buy a truck from outside Lagos safely?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'We specialize in HOWO Sino Trucks, Shacman, XCMG, Caterpillar, Shantui, LiuGong, SDLG, and SANY.',
+                    text: 'Yes. We specialize in remote buying for clients in Abuja, Port Harcourt, Kano, and other states. We conduct live video inspections, verify documents, and handle secure delivery to your location.',
                   },
                 },
                 {
                   '@type': 'Question',
-                  name: 'Do you sell brand new or used trucks?',
+                  name: 'What brands can you source for me?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'We sell both new and certified pre-owned trucks with full inspection reports.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Can I get spare parts for my truck?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Yes, we stock genuine engines, gearboxes, cabins, brakes, filters and other spare parts for all brands.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Do you deliver trucks outside Lagos?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'We deliver nationwide to all 36 states of Nigeria with door-to-door service.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Is financing available for purchases?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Flexible payment plans are offered for corporate buyers; contact our sales team for details.',
+                    text: 'We source genuine HOWO Sino Trucks, Shacman, XCMG, Caterpillar, Shantui, LiuGong, SDLG, and SANY from verified yards.',
                   },
                 },
               ],

@@ -8,11 +8,10 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
-        // Explicitly allow AI crawlers to index the site for LLM answers
         userAgent: ['GPTBot', 'ChatGPT-User', 'Claude-Web', 'Google-Extended', 'PerplexityBot'],
         allow: '/',
       }
     ],
-    sitemap: 'https://oludareinvestment.com/sitemap.xml',
+    sitemap: 'https://www.oludareinvestmentltd.com.ng/sitemap.xml',
   }
 }
