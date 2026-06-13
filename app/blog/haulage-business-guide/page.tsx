@@ -21,8 +21,35 @@ export const metadata: Metadata = {
 }
 
 export default function HaulageBusinessBlog() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Haulage Business in Nigeria: How to Make ₦1M+ Monthly Profit",
+    "description": "A comprehensive business guide for investing in the Nigerian haulage and logistics sector, featuring real-world profit calculations, driver management, and maintenance strategies.",
+    "image": "https://www.oludareinvestmentltd.com.ng/images/trucks/howo-dump-yellow-fleet.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "OIL Sourcing Team",
+      "jobTitle": "Logistics Investment Analysts"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Oludare Investment Ltd",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.oludareinvestmentltd.com.ng/images/logo/oil-logo-full.jpg"
+      }
+    },
+    "datePublished": "2025-05-25",
+    "dateModified": "2025-05-25"
+  }
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Header />
       <article className="bg-background py-20 lg:py-32">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">

@@ -21,8 +21,35 @@ export const metadata: Metadata = {
 }
 
 export default function UsedTruckInspectionBlog() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Don't Get Cheated: 5 Things to Inspect Before Buying a Used Tipper",
+    "description": "An expert guide detailing the exact physical and mechanical inspection steps required before purchasing a pre-owned heavy-duty truck in Lagos, Nigeria.",
+    "image": "https://www.oludareinvestmentltd.com.ng/images/trucks/howo-dump-white-close.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Engr. Oludare",
+      "jobTitle": "Senior Fleet Consultant"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Oludare Investment Ltd",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.oludareinvestmentltd.com.ng/images/logo/oil-logo-full.jpg"
+      }
+    },
+    "datePublished": "2025-05-15",
+    "dateModified": "2025-05-15"
+  }
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Header />
       <article className="bg-background py-20 lg:py-32">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">

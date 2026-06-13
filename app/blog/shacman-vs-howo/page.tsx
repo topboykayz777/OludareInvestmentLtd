@@ -21,8 +21,35 @@ export const metadata: Metadata = {
 }
 
 export default function ShacmanVsHowoBlog() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Shacman F3000 vs. HOWO 371: The Ultimate King of Nigerian Roads?",
+    "description": "An in-depth, technical comparison of Shacman F3000 and Sinotruk HOWO 371 dump trucks, specifically analyzed for Nigerian road conditions, maintenance costs, and resale value.",
+    "image": "https://www.oludareinvestmentltd.com.ng/images/trucks/shacman-fleet-green.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Engr. Oludare",
+      "jobTitle": "Senior Fleet Consultant"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Oludare Investment Ltd",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.oludareinvestmentltd.com.ng/images/logo/oil-logo-full.jpg"
+      }
+    },
+    "datePublished": "2025-05-20",
+    "dateModified": "2025-05-20"
+  }
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Header />
       <article className="bg-background py-20 lg:py-32">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Clock, User, Calendar, ArrowRight, AlertCircle } from "lucide-react"
+import { Clock, User, Calendar, AlertCircle } from "lucide-react"
 import Link from "next/link"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
@@ -13,8 +13,35 @@ export const metadata: Metadata = {
 }
 
 export default function PriceGuideBlog() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "HOWO 371 Price in Nigeria: 2025 Comprehensive Guide",
+    "description": "A detailed breakdown of the current market prices for brand new and pre-owned Sinotruk HOWO 371 dump trucks in Nigeria, including port clearing and FX factors.",
+    "image": "https://www.oludareinvestmentltd.com.ng/images/trucks/howo-dump-white-fleet.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Engr. Oludare",
+      "jobTitle": "Senior Fleet Consultant"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Oludare Investment Ltd",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.oludareinvestmentltd.com.ng/images/logo/oil-logo-full.jpg"
+      }
+    },
+    "datePublished": "2025-03-10",
+    "dateModified": "2025-03-10"
+  }
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Header />
       <article className="bg-background py-20 lg:py-32">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
