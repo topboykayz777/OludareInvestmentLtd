@@ -120,23 +120,73 @@ export default function RootLayout({
                 itemListElement: [
                   {
                     '@type': 'Offer',
-                    itemOffered: { '@type': 'Product', name: 'Shacman F3000 Dump Truck' },
+                    itemOffered: {
+                      '@type': 'Product',
+                      name: 'Shacman F3000 Dump Truck',
+                      offers: {
+                        '@type': 'AggregateOffer',
+                        priceCurrency: 'NGN',
+                        lowPrice: '38000000',
+                        highPrice: '65000000',
+                        offerCount: '5',
+                      },
+                    },
                   },
                   {
                     '@type': 'Offer',
-                    itemOffered: { '@type': 'Product', name: 'HOWO Sino Truck 371' },
+                    itemOffered: {
+                      '@type': 'Product',
+                      name: 'HOWO Sino Truck 371',
+                      offers: {
+                        '@type': 'AggregateOffer',
+                        priceCurrency: 'NGN',
+                        lowPrice: '38000000',
+                        highPrice: '65000000',
+                        offerCount: '8',
+                      },
+                    },
                   },
                   {
                     '@type': 'Offer',
-                    itemOffered: { '@type': 'Product', name: 'XCMG Excavator' },
+                    itemOffered: {
+                      '@type': 'Product',
+                      name: 'XCMG Excavator',
+                      offers: {
+                        '@type': 'AggregateOffer',
+                        priceCurrency: 'NGN',
+                        lowPrice: '25000000',
+                        highPrice: '80000000',
+                        offerCount: '3',
+                      },
+                    },
                   },
                   {
                     '@type': 'Offer',
-                    itemOffered: { '@type': 'Product', name: 'SDLG Wheel Loader' },
+                    itemOffered: {
+                      '@type': 'Product',
+                      name: 'SDLG Wheel Loader',
+                      offers: {
+                        '@type': 'AggregateOffer',
+                        priceCurrency: 'NGN',
+                        lowPrice: '20000000',
+                        highPrice: '45000000',
+                        offerCount: '4',
+                      },
+                    },
                   },
                   {
                     '@type': 'Offer',
-                    itemOffered: { '@type': 'Product', name: 'CNG Truck' },
+                    itemOffered: {
+                      '@type': 'Product',
+                      name: 'CNG Truck',
+                      offers: {
+                        '@type': 'AggregateOffer',
+                        priceCurrency: 'NGN',
+                        lowPrice: '40000000',
+                        highPrice: '75000000',
+                        offerCount: '6',
+                      },
+                    },
                   },
                 ],
               },
