@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     'buy HOWO truck safely Nigeria',
     'Shacman truck finder Lagos',
     'Lagos truck yard inspection service',
-    'HOWO 371 price Nigeria',
+    'HOWO 371 price Nigeria 2025',
     'Shacman F3000 Lagos',
     'heavy duty truck finder Nigeria',
     'Oludare Investment Ltd',
@@ -43,6 +43,9 @@ export const metadata: Metadata = {
     'trucks Ojodu Berger',
     'buy used tipper safely Lagos',
     'independent truck inspector Nigeria',
+    'verify truck customs papers nigeria',
+    'how to avoid truck scams in lagos',
+    'best truck sourcing agency in lagos',
   ],
   icons: {
     icon: SITE_IMAGE,

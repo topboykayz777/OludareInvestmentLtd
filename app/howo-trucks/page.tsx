@@ -7,9 +7,14 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "HOWO Sino Trucks for Sale in Lagos Nigeria | Genuine 371 & 420 Models",
-  description: "Official dealer of HOWO Sino Trucks in Nigeria. We supply 371HP and 420HP dump trucks, tractor heads, and cement mixers. Visit our Ojodu Berger yard today.",
-  keywords: ["HOWO trucks Lagos", "Sinotruk Nigeria", "HOWO 371 price Nigeria", "HOWO dump truck Lagos", "HOWO spare parts Nigeria"],
+  title: "HOWO 371 Price in Nigeria 2025 | Brand New Sinotruk HOWO Tippers Lagos",
+  description: "Get the latest HOWO 371 price in Nigeria for 2025. Official Sinotruk HOWO dealer in Lagos supplying 371HP and 420HP dump trucks, tractor heads, and CNG models at Ojodu Berger.",
+  keywords: [
+    "HOWO 371 price in nigeria 2025", "howo 371 tipper price in lagos", 
+    "buy brand new sinotruk howo nigeria", "howo 371 specifications", 
+    "sinotruk howo dealer lagos", "howo 371 engine price nigeria", 
+    "howo 10 wheeler price nigeria", "howo cng truck price lagos"
+  ],
 }
 
 export default function HowoTrucksPage() {
@@ -17,9 +22,10 @@ export default function HowoTrucksPage() {
     <main>
       <Header />
       <LandingHero 
-        title="Genuine HOWO Sino Trucks in Nigeria"
-        subtitle="Official Dealer - RC 1042746"
-        description="The backbone of Nigerian logistics. We provide factory-direct HOWO 371 and 420 models with full spare parts support and nationwide delivery."
+        title="HOWO 371 Price in Nigeria: 2025 Market Guide"
+        subtitle="Official Sinotruk Agent - RC 1042746"
+        description="The backbone of Nigerian construction. We provide direct factory pricing for the HOWO 371 (WD615.47) and HOWO 420HP models, with guaranteed genuine spare parts support at our Ojodu Berger yard."
+        ctaText="Get Today's HOWO Price"
       />
       
       <div className="bg-secondary pt-8">
@@ -31,26 +37,56 @@ export default function HowoTrucksPage() {
       <CategoryInventory 
         filterType="brand"
         filterValue="HOWO"
-        title="Current HOWO Inventory"
-        description="Explore our range of Sinotruk HOWO units available for immediate inspection at our Lagos yard."
+        title="Verified HOWO 371 & 420 Inventory"
+        description="All units are current 2024/2025 models, tropicalized for the Nigerian terrain and ready for immediate deployment."
       />
 
       <section className="bg-background py-16 lg:py-24">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
-          <h2 className="mb-8 text-3xl font-black text-foreground lg:text-4xl">Why Choose HOWO Trucks for Your Fleet?</h2>
-          <div className="prose prose-slate dark:prose-invert max-w-none space-y-6 text-muted-foreground">
-            <p>
-              Sinotruk HOWO has become the most popular heavy-duty truck brand in Nigeria for a reason: **Reliability and Ease of Maintenance**. Whether you are operating in a quarry in Ogun State or doing long-haul logistics to Kano, HOWO trucks are built to withstand the toughest conditions.
+          <h2 className="mb-8 text-3xl font-black text-foreground lg:text-4xl leading-tight">Why the HOWO 371 is the King of Nigerian Roads</h2>
+          <div className="prose prose-slate dark:prose-invert max-w-none space-y-6 text-muted-foreground text-pretty">
+            <p className="text-lg">
+              The Sinotruk HOWO 371 has dominated the Nigerian market for over a decade because it offers the perfect balance of power, durability, and ease of maintenance. Whether you are hauling sand in Ikorodu or operating in a quarry in Abeokuta, the HOWO 371 (10-tyre tipper) is engineered to last.
             </p>
+            
             <div className="grid gap-6 sm:grid-cols-2 mt-8">
-              <div className="rounded-xl border border-border p-6">
-                <h3 className="text-lg font-bold text-primary mb-2">Tropicalized Engineering</h3>
-                <p className="text-sm">Our HOWO units feature enhanced cooling systems and reinforced chassis specifically designed for the Nigerian climate and road conditions.</p>
+              <div className="premium-card p-6">
+                <h3 className="text-lg font-bold text-primary mb-2 uppercase tracking-wide">WD615.47 Engine Power</h3>
+                <p className="text-sm">The 371HP Euro II engine is specifically chosen for Nigeria because it handles our local diesel quality better than high-electronic Euro IV or V engines.</p>
               </div>
-              <div className="rounded-xl border border-border p-6">
-                <h3 className="text-lg font-bold text-primary mb-2">Parts Availability</h3>
-                <p className="text-sm">Never worry about downtime. HOWO spare parts are the most widely available truck parts in Nigeria, and we stock them right here in Lagos.</p>
+              <div className="premium-card p-6">
+                <h3 className="text-lg font-bold text-primary mb-2 uppercase tracking-wide">Parts Dominance</h3>
+                <p className="text-sm">HOWO 371 parts are the most widely available truck parts in Nigeria. From Lagos to Kano, you can find filters, injectors, and cabins in almost any market.</p>
               </div>
+            </div>
+
+            <div className="mt-12 overflow-hidden rounded-2xl border border-border">
+              <table className="w-full text-sm text-left">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="p-4">Key Specification</th>
+                    <th className="p-4">Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-border">
+                    <td className="p-4 font-bold">Engine Model</td>
+                    <td className="p-4">WD615.47 (371HP)</td>
+                  </tr>
+                  <tr className="border-b border-border">
+                    <td className="p-4 font-bold">Transmission</td>
+                    <td className="p-4">HW19710 (10 Speed)</td>
+                  </tr>
+                  <tr className="border-b border-border">
+                    <td className="p-4 font-bold">Rear Axle</td>
+                    <td className="p-4">HC16 / AC16 Heavy Duty</td>
+                  </tr>
+                  <tr className="border-b border-border">
+                    <td className="p-4 font-bold">Tyre Size</td>
+                    <td className="p-4">12.00R20 (10+1 Tyres)</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

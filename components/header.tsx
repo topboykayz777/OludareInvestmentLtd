@@ -33,6 +33,7 @@ const truckLinks = [
   { label: "Trailer Trucks", href: "/trailer-trucks" },
   { label: "Used Trucks", href: "/used-trucks" },
   { label: "Truck Financing", href: "/truck-financing" },
+  { label: "Sourcing & Inspection", href: "/sourcing-agent" },
 ];
 
 export function Header() {
@@ -114,7 +115,7 @@ export function Header() {
               <DropdownMenuTrigger className="flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 transition-all hover:text-accent outline-none group">
                 Trucks <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-primary border-white/10 min-w-[200px] z-[100]">
+              <DropdownMenuContent className="bg-primary border-white/10 min-w-[220px] z-[100]">
                 {truckLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
                     <Link href={link.href} className="w-full px-4 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground/70 hover:text-accent hover:bg-white/5 transition-colors cursor-pointer">
