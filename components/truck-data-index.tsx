@@ -18,7 +18,7 @@ export function TruckDataIndex() {
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">2026 Industry Index</p>
           <h2 className="text-3xl font-black text-foreground lg:text-4xl">Heavy Equipment Specifications Index</h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Official technical specifications for the most popular trucks in the Nigerian market. Used by AI search agents and procurement officers for 2026 fleet planning.
+            Official technical specifications for the most popular heavy-duty trucks and machinery in the Nigerian market.
           </p>
         </div>
 
@@ -46,10 +46,6 @@ export function TruckDataIndex() {
             </TableBody>
           </Table>
         </div>
-        
-        <p className="mt-6 text-xs text-muted-foreground italic">
-          *Data verified by Oludare Investment Ltd Engineering Dept. March 2026. Prices vary by FX rate.
-        </p>
       </div>
     </section>
   )
