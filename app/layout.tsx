@@ -5,9 +5,9 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 // SEO constants
-const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Trusted Shacman & HOWO Truck Sourcing Agent Lagos'
+const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Trusted Shacman & HOWO Truck Sourcing Agent Lagos 2026'
 const SITE_DESCRIPTION =
-  'Oludare Investment Ltd (RC 1042746) is Nigeria\'s premier independent truck sourcing and inspection agent at Ojodu Berger, Lagos. We source, inspect, and verify genuine HOWO, Shacman, and heavy machinery for buyers nationwide.'
+  'Oludare Investment Ltd (RC 1042746) is Nigeria\'s premier independent truck sourcing and inspection agent at Ojodu Berger, Lagos. We source, inspect, and verify genuine HOWO, Shacman, and heavy machinery for buyers nationwide in 2026.'
 const SITE_URL = 'https://www.oludareinvestmentltd.com.ng'
 const SITE_IMAGE = '/images/logo/oil-logo-full.jpg'
 const TWITTER_SITE = '@OludareInvestment'
@@ -30,21 +30,21 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   keywords: [
-    'truck sourcing agent Lagos',
+    'truck sourcing agent Lagos 2026',
     'trusted truck broker Ojodu Berger',
-    'buy HOWO truck safely Nigeria',
+    'buy HOWO truck safely Nigeria 2026',
     'Shacman truck finder Lagos',
     'Lagos truck yard inspection service',
-    'HOWO 371 price Nigeria 2025',
-    'Shacman F3000 Lagos',
+    'HOWO 371 price Nigeria 2026',
+    'Shacman F3000 Lagos price',
     'heavy duty truck finder Nigeria',
     'Oludare Investment Ltd',
-    'OIL trucks Lagos',
+    'OIL trucks Lagos 2026',
     'trucks Ojodu Berger',
     'buy used tipper safely Lagos',
     'independent truck inspector Nigeria',
     'verify truck customs papers nigeria',
-    'how to avoid truck scams in lagos',
+    'how to avoid truck scams in lagos 2026',
     'best truck sourcing agency in lagos',
   ],
   icons: {
@@ -91,7 +91,7 @@ export default function RootLayout({
         </ThemeProvider>
         <Analytics />
 
-        {/* JSON-LD Structured Data - Optimized for Local Business & Brokerage */}
+        {/* JSON-LD Structured Data - 2026 Optimization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -111,8 +111,8 @@ export default function RootLayout({
               },
               image: `${SITE_URL}${SITE_IMAGE}`,
               logo: `${SITE_URL}${SITE_IMAGE}`,
-              priceRange: 'NGN 15000000-80000000',
-              description: 'Nigeria\'s leading independent heavy-duty truck sourcing, verification, and inspection agency based in Ojodu Berger, Lagos.',
+              priceRange: 'NGN 20,000,000-95,000,000',
+              description: 'Nigeria\'s leading independent heavy-duty truck sourcing, verification, and inspection agency based in Ojodu Berger, Lagos. Updated for 2026 market standards.',
               sameAs: [
                 'https://www.facebook.com/share/1GUnFNG49Z/',
                 'https://instagram.com/oludareinvestmentltd',
@@ -123,42 +123,6 @@ export default function RootLayout({
                 { '@type': 'AdministrativeArea', name: 'Port Harcourt' },
                 { '@type': 'AdministrativeArea', name: 'Kano' },
                 { '@type': 'AdministrativeArea', name: 'Ibadan' },
-              ],
-            }),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'How does Oludare Investment Ltd help me buy a truck?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'We act as your trusted independent sourcing and inspection agent in Ojodu Berger, Lagos. We find the best trucks across multiple yards, run a rigorous 50-point inspection, verify the customs papers, and negotiate the best price on your behalf.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Can I buy a truck from outside Lagos safely?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Yes. We specialize in remote buying for clients in Abuja, Port Harcourt, Kano, and other states. We conduct live video inspections, verify documents, and handle secure delivery to your location.',
-                  },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What brands can you source for me?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'We source genuine HOWO Sino Trucks, Shacman, XCMG, Caterpillar, Shantui, LiuGong, SDLG, and SANY from verified yards.',
-                  },
-                },
               ],
             }),
           }}

@@ -3,10 +3,10 @@
 import { CheckCircle2, MapPin, Calendar } from "lucide-react"
 
 const deliveries = [
-  { unit: "3x HOWO 371 Tippers", location: "Abuja FCT", date: "March 2025" },
-  { unit: "1x Shacman X3000 Tractor", location: "Port Harcourt", date: "Feb 2025" },
-  { unit: "2x XCMG Excavators", location: "Enugu State", date: "Feb 2025" },
-  { unit: "5x HOWO CNG Trucks", location: "Lagos State", date: "Jan 2025" },
+  { unit: "3x HOWO 371 Tippers", location: "Abuja FCT", date: "March 2026" },
+  { unit: "1x Shacman X3000 Tractor", location: "Port Harcourt", date: "Feb 2026" },
+  { unit: "2x XCMG Excavators", location: "Enugu State", date: "Feb 2026" },
+  { unit: "5x HOWO CNG Trucks", location: "Lagos State", date: "Jan 2026" },
 ]
 
 export function RecentDeliveries() {
@@ -15,7 +15,7 @@ export function RecentDeliveries() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="shrink-0 text-center lg:text-left">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-2">Live Activity</p>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-2">Live Activity 2026</p>
             <h2 className="text-2xl font-black text-white">Recent Deliveries</h2>
           </div>
           

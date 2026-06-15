@@ -5,6 +5,8 @@ import { VideoSection } from "@/components/video-section"
 import { ProductsSection } from "@/components/products-section"
 import { BrandsSection } from "@/components/brands-section"
 import { ServicesSection } from "@/components/services-section"
+import { TruckDataIndex } from "@/components/truck-data-index"
+import { RegionalHubs } from "@/components/regional-hubs"
 import { GallerySection } from "@/components/gallery-section"
 import { RecentDeliveries } from "@/components/recent-deliveries"
 import { TestimonialsSection } from "@/components/testimonials-section"
@@ -21,9 +23,11 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutSection />
+      <TruckDataIndex />
       <VideoSection />
       <ProductsSection />
       <BrandsSection />
+      <RegionalHubs />
       <ServicesSection />
       <GallerySection />
       <RecentDeliveries />
