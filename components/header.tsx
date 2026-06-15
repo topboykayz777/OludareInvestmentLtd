@@ -21,7 +21,6 @@ const INSTAGRAM_URL = "https://instagram.com/oludareinvestmentltd";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/#about" },
-  { label: "Price Index", href: "/berger-price-index" },
   { label: "Services", href: "/#services" },
   { label: "Blog", href: "/#blog" },
   { label: "Contact", href: "/#contact" },
