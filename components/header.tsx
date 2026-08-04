@@ -39,9 +39,11 @@ const truckLinks = [
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
+    setMounted(true);
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -111,20 +113,26 @@ export function Header() {
             ))}
 
             {/* Trucks Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 transition-all hover:text-accent outline-none group">
-                Trucks <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-primary border-white/10 min-w-[220px] z-[100]">
-                {truckLinks.map((link) => (
-                  <DropdownMenuItem key={link.href} asChild>
-                    <Link href={link.href} className="w-full px-4 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground/70 hover:text-accent hover:bg-white/5 transition-colors cursor-pointer">
-                      {link.label}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            {mounted ? (
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 transition-all hover:text-accent outline-none group">
+                  Trucks <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-primary border-white/10 min-w-[220px] z-[100]">
+                  {truckLinks.map((link) => (
+                    <DropdownMenuItem key={link.href} asChild>
+                      <Link href={link.href} className="w-full px-4 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground/70 hover:text-accent hover:bg-white/5 transition-colors cursor-pointer">
+                        {link.label}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <button className="flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 outline-none">
+                Trucks <ChevronDown className="h-4 w-4" />
+              </button>
+            )}
 
             {navLinks.slice(2).map((link) => (
               <Link
