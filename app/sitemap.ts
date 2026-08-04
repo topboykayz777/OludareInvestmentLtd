@@ -2,11 +2,17 @@ import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.oludareinvestmentltd.com.ng'
-  
+
   return [
     {
       url: baseUrl,
       lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/blog/best-trucks-to-buy-in-lagos-2026`,
+      lastModified: new Date('2026-08-05'),
       changeFrequency: 'weekly',
       priority: 1,
     },

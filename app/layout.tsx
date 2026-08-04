@@ -5,9 +5,9 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 // SEO constants
-const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Trusted Shacman & HOWO Truck Sourcing Agent Lagos 2026'
+const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Best Truck Dealer & Sourcing Agent Lagos 2026'
 const SITE_DESCRIPTION =
-  'Oludare Investment Ltd (RC 1042746) is Nigeria\'s premier independent truck sourcing and inspection agent at Ojodu Berger, Lagos. We source, inspect, and verify genuine HOWO, Shacman, and heavy machinery for buyers nationwide in 2026.'
+  'Oludare Investment Ltd (RC 1042746) is Nigeria\'s leading truck dealer and independent sourcing agency at Ojodu Berger, Lagos. Where to buy the best HOWO 371, Shacman F3000/X3000, tipper trucks, lowbed trailers, and spare parts in Lagos State.'
 const SITE_URL = 'https://www.oludareinvestmentltd.com.ng'
 const SITE_IMAGE = '/images/logo/oil-logo-full.jpg'
 const TWITTER_SITE = '@OludareInvestment'
@@ -22,6 +22,46 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
 })
 
+// Expanded multi-intent search keyphrases for Lagos & Nigeria
+const SEO_KEYWORDS = [
+  'best truck to buy in lagos',
+  'best howo truck',
+  'best shacman truck',
+  'where can i buy trucks in lagos',
+  'truck dealers in lagos state',
+  'howo 371 price in lagos 2026',
+  'shacman f3000 price lagos',
+  'shacman x3000 price nigeria',
+  'ojodu berger truck market lagos',
+  'best tipper truck in nigeria',
+  'buy tipper truck in lagos',
+  'direct port used trucks lagos',
+  'cheap dump trucks ojodu berger',
+  'howo 371 vs shacman f3000 lagos',
+  'best truck for sand delivery lagos',
+  'best truck for quarry mining nigeria',
+  'heavy duty truck sourcing agent lagos',
+  'independent truck inspector ojodu berger',
+  'verify truck customs papers nigeria',
+  'how to buy trucks in lagos without scam',
+  'truck financing in lagos state',
+  'used howo 371 tipper price berger',
+  'weichai engine price lagos',
+  'sinotruk howo spare parts lagos',
+  'truck cabin howo 371 lagos',
+  'lowbed trailer for sale in lagos',
+  'amphibious excavator lagos dredging',
+  'xcmg excavator price lagos',
+  'shantui bulldozer price lagos',
+  'liugong wheel loader lagos',
+  'truck dealers ikeja lagos',
+  'truck dealers lekki epe lagos',
+  'truck dealers ikorodu lagos',
+  'truck dealers apapa lagos',
+  'truck dealers badagry lagos',
+  'oil truck sales ojodu berger'
+]
+
 export const metadata: Metadata = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
@@ -29,24 +69,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  keywords: [
-    'truck sourcing agent Lagos 2026',
-    'trusted truck broker Ojodu Berger',
-    'buy HOWO truck safely Nigeria 2026',
-    'Shacman truck finder Lagos',
-    'Lagos truck yard inspection service',
-    'HOWO 371 price Nigeria 2026',
-    'Shacman F3000 Lagos price',
-    'heavy duty truck finder Nigeria',
-    'Oludare Investment Ltd',
-    'OIL trucks Lagos 2026',
-    'trucks Ojodu Berger',
-    'buy used tipper safely Lagos',
-    'independent truck inspector Nigeria',
-    'verify truck customs papers nigeria',
-    'how to avoid truck scams in lagos 2026',
-    'best truck sourcing agency in lagos',
-  ],
+  keywords: SEO_KEYWORDS,
   icons: {
     icon: SITE_IMAGE,
     apple: SITE_IMAGE,
@@ -91,14 +114,14 @@ export default function RootLayout({
         </ThemeProvider>
         <Analytics />
 
-        {/* JSON-LD Structured Data - 2026 Optimization */}
+        {/* Comprehensive JSON-LD Local Business & AutoDealer Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'ProfessionalService',
-              name: 'Oludare Investment Ltd',
+              '@type': 'AutoDealer',
+              name: 'Oludare Investment Ltd (OIL Trucks)',
               url: SITE_URL,
               telephone: ['+2348020890065', '+2348105955892'],
               address: {
@@ -109,20 +132,26 @@ export default function RootLayout({
                 addressRegion: 'Lagos State',
                 addressCountry: 'NG',
               },
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: 6.637,
+                longitude: 3.347,
+              },
               image: `${SITE_URL}${SITE_IMAGE}`,
               logo: `${SITE_URL}${SITE_IMAGE}`,
               priceRange: 'NGN 20,000,000-95,000,000',
-              description: 'Nigeria\'s leading independent heavy-duty truck sourcing, verification, and inspection agency based in Ojodu Berger, Lagos. Updated for 2026 market standards.',
+              description: 'Nigeria\'s #1 verified truck dealer and independent heavy-duty truck sourcing & inspection agency based in Ojodu Berger, Lagos State. Specialists in HOWO 371, Shacman F3000/X3000, Tippers, Tractor Heads, Trailers & Genuine Parts.',
               sameAs: [
                 'https://www.facebook.com/share/1GUnFNG49Z/',
                 'https://instagram.com/oludareinvestmentltd',
               ],
               areaServed: [
-                { '@type': 'AdministrativeArea', name: 'Lagos' },
-                { '@type': 'AdministrativeArea', name: 'Abuja' },
-                { '@type': 'AdministrativeArea', name: 'Port Harcourt' },
-                { '@type': 'AdministrativeArea', name: 'Kano' },
-                { '@type': 'AdministrativeArea', name: 'Ibadan' },
+                { '@type': 'AdministrativeArea', name: 'Lagos State (Ikeja, Berger, Lekki, Epe, Ikorodu, Apapa, Badagry)' },
+                { '@type': 'AdministrativeArea', name: 'Abuja FCT' },
+                { '@type': 'AdministrativeArea', name: 'Port Harcourt (Rivers State)' },
+                { '@type': 'AdministrativeArea', name: 'Kano State' },
+                { '@type': 'AdministrativeArea', name: 'Oyo State (Ibadan)' },
+                { '@type': 'AdministrativeArea', name: 'Ogun State (Abeokuta, Sagamu, Mowe)' },
               ],
             }),
           }}
