@@ -7,8 +7,8 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Best Trucks to Buy in Lagos (2026): Prices, Verified Yards & HOWO vs Shacman Guide | OIL",
-  description: "The ultimate 2026 buyer's guide for heavy-duty trucks in Lagos. Learn the best HOWO and Shacman models to buy, current prices, where to buy in Ojodu Berger & Apapa, and how to avoid scams.",
+  title: "Best Trucks to Buy in Lagos (2026): Models, Verified Yards & HOWO vs Shacman Guide | OIL",
+  description: "The ultimate 2026 buyer's guide for heavy-duty trucks in Lagos. Learn the best HOWO and Shacman models to buy, where to buy in Ojodu Berger & Apapa, and how to avoid scams.",
   keywords: [
     "best truck to buy in lagos",
     "best howo truck",
@@ -32,7 +32,7 @@ export default function BestTrucksInLagos2026Blog() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "Ultimate Guide 2026: Best Trucks to Buy in Lagos, Verified Yards & HOWO vs Shacman Breakdown",
-    "description": "An exhaustive 2000-word analysis on selecting, inspecting, and purchasing the best heavy-duty tipper and trailer trucks in Lagos State for 2026.",
+    "description": "An exhaustive analysis on selecting, inspecting, and purchasing the best heavy-duty tipper and trailer trucks in Lagos State for 2026.",
     "image": "https://www.oludareinvestmentltd.com.ng/images/trucks/shacman-fleet-green.jpg",
     "author": {
       "@type": "Person",
@@ -68,14 +68,14 @@ export default function BestTrucksInLagos2026Blog() {
               2026 Flagship Market Report
             </span>
             <h1 className="text-3xl font-black text-foreground sm:text-5xl lg:text-6xl leading-[1.15] text-balance">
-              Best Trucks to Buy in Lagos (2026): Models, Verified Yards & Prices
+              Best Trucks to Buy in Lagos (2026): Models, Verified Yards & Guides
             </h1>
           </div>
 
           <div className="mb-10 flex flex-wrap items-center gap-6 text-xs sm:text-sm text-muted-foreground border-y border-border py-4">
             <span className="flex items-center gap-2"><User className="h-4 w-4 text-accent" /> Engr. Oludare & OIL Team</span>
             <span className="flex items-center gap-2"><Calendar className="h-4 w-4 text-accent" /> August 5, 2026</span>
-            <span className="flex items-center gap-2"><Clock className="h-4 w-4 text-accent" /> 18 min comprehensive read</span>
+            <span className="flex items-center gap-2"><Clock className="h-4 w-4 text-accent" /> 16 min comprehensive read</span>
           </div>
 
           {/* Hero Featured Image */}
@@ -96,7 +96,7 @@ export default function BestTrucksInLagos2026Blog() {
             </p>
 
             <p>
-              In this definitive 2026 guide, the engineering and sourcing team at **Oludare Investment Ltd (RC 1042746)** breaks down the top HOWO and Shacman models, current Lagos market prices, exact location guides on **where to buy trucks in Lagos**, and the 5 critical verification tests every fleet owner must perform before handing over cash.
+              In this definitive 2026 guide, the engineering and sourcing team at **Oludare Investment Ltd (RC 1042746)** breaks down the top HOWO and Shacman models, exact location guides on **where to buy trucks in Lagos**, and the 5 critical verification tests every fleet owner must perform before handing over cash.
             </p>
 
             <div className="my-10 rounded-2xl bg-secondary p-6 sm:p-8 border border-border">
@@ -301,32 +301,7 @@ export default function BestTrucksInLagos2026Blog() {
 
             <hr className="my-10 border-border" />
 
-            <h2 className="text-3xl font-black text-foreground">Section 5: Current Truck Prices in Lagos (2026 Reference Matrix)</h2>
-            <p>
-              Heavy equipment prices in Lagos depend on import customs tariffs, FX rates, and condition (Brand New vs. Direct Port Used vs. Locally Used). Below are current Q3 2026 benchmark ranges:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3">
-              <li><strong>Brand New HOWO 371 Tipper (2026 Factory Direct):</strong> Contact sales for current rate (FX linked)</li>
-              <li><strong>Certified Direct Port Used HOWO 371 (10-Wheeler):</strong> ₦48,000,000 – ₦62,000,000</li>
-              <li><strong>Brand New Shacman F3000 Tipper (380HP):</strong> Contact sales for current rate</li>
-              <li><strong>Clean Pre-Owned Shacman F3000:</strong> ₦52,000,000 – ₦68,000,000</li>
-              <li><strong>Shacman X3000 Tractor Head (420HP):</strong> ₦65,000,000 – ₦85,000,000</li>
-              <li><strong>Low-Bed Heavy Equipment Trailer (4-Axle 80 Ton):</strong> ₦28,000,000 – ₦38,000,000</li>
-            </ul>
-
-            <div className="relative my-10 aspect-video overflow-hidden rounded-2xl border border-border">
-              <Image
-                src="/images/trailers/blue-low-bed-trailer.jpg"
-                alt="Blue low bed trailer truck in Lagos Nigeria for heavy equipment transport"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <hr className="my-10 border-border" />
-
-            <h2 className="text-3xl font-black text-foreground">Section 6: Why Buy or Source Through Oludare Investment Ltd (OIL)?</h2>
+            <h2 className="text-3xl font-black text-foreground">Section 5: Why Buy or Source Through Oludare Investment Ltd (OIL)?</h2>
             <p>
               At Oludare Investment Ltd (RC 1042746), we have spent over 7 years building the most trusted truck sourcing, inspection, and sales network in Lagos State. Whether you are a corporate construction firm in Ikeja, a sand winner in Ikorodu, or an interstate transporter in Abuja:
             </p>
