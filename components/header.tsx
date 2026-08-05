@@ -60,39 +60,40 @@ export function Header() {
   return (
     <div className="flex flex-col">
       {/* Top bar - Desktop only */}
-      <div className="bg-[#0a1128] text-primary-foreground/70 text-[10px] font-bold uppercase tracking-widest hidden md:block">
+      <div className="bg-[#070e22] text-primary-foreground/80 text-xs font-medium tracking-wide hidden md:block border-b border-white/5">
         <div className="mx-auto max-w-7xl flex items-center justify-between px-4 py-2 lg:px-8">
-          <div className="flex items-center gap-4">
-            <span>Official Truck Dealer</span>
-            <span className="text-accent">RC 1042746</span>
+          <div className="flex items-center gap-3">
+            <span className="font-semibold text-primary-foreground/90">Official Heavy-Duty Truck Dealer</span>
+            <span className="text-white/20">•</span>
+            <span className="text-accent font-semibold tracking-wider">RC 1042746</span>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5 text-[13px]">
             <div className="flex items-center gap-3">
-              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" title="Facebook">
                 <Facebook className="h-3.5 w-3.5" />
               </a>
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" title="Instagram">
                 <Instagram className="h-3.5 w-3.5" />
               </a>
             </div>
             <span className="text-primary-foreground/20">|</span>
-            <a href="mailto:Oludareinvestmentltd@gmail.com" className="hover:text-accent transition-colors">
+            <a href="mailto:Oludareinvestmentltd@gmail.com" className="hover:text-accent transition-colors font-sans">
               Oludareinvestmentltd@gmail.com
             </a>
             <span className="text-primary-foreground/20">|</span>
-            <a href="tel:+2348020890065" className="hover:text-accent transition-colors">
+            <a href="tel:+2348020890065" className="hover:text-accent transition-colors font-medium">
               08020890065
             </a>
           </div>
         </div>
       </div>
 
-      <header className={`sticky top-0 z-50 transition-all duration-500 ${scrolled ? "bg-primary/90 backdrop-blur-xl shadow-2xl py-2" : "bg-primary py-4"}`}>
+      <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-primary/95 backdrop-blur-xl shadow-xl py-2.5" : "bg-primary py-4"}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 lg:px-8">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center text-primary-foreground transition-all hover:opacity-90 focus:outline-none"
+            className="flex items-center text-primary-foreground transition-all hover:opacity-95 focus:outline-none"
             aria-label="Oludare Investment Ltd Home"
             onClick={handleLogoClick}
           >
@@ -100,28 +101,28 @@ export function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-1.5 lg:flex" aria-label="Main navigation">
             {navLinks.slice(0, 2).map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 transition-all hover:text-accent group"
+                className="relative px-3.5 py-2 text-[15px] font-semibold tracking-wide text-primary-foreground/85 transition-colors hover:text-accent group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:left-4 group-hover:w-[calc(100%-32px)]" />
+                <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:left-3.5 group-hover:w-[calc(100%-28px)]" />
               </Link>
             ))}
 
             {/* Trucks Dropdown */}
             {mounted ? (
               <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 transition-all hover:text-accent outline-none group">
-                  Trucks <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
+                <DropdownMenuTrigger className="flex items-center gap-1.5 px-3.5 py-2 text-[15px] font-semibold tracking-wide text-primary-foreground/85 transition-colors hover:text-accent outline-none group cursor-pointer">
+                  Trucks & Fleet <ChevronDown className="h-4 w-4 opacity-70 transition-transform duration-200 group-data-[state=open]:rotate-180" />
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-primary border-white/10 min-w-[220px] z-[100]">
+                <DropdownMenuContent className="bg-primary/95 backdrop-blur-xl border-white/10 min-w-[220px] p-1.5 shadow-2xl z-[100] rounded-xl">
                   {truckLinks.map((link) => (
                     <DropdownMenuItem key={link.href} asChild>
-                      <Link href={link.href} className="w-full px-4 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground/70 hover:text-accent hover:bg-white/5 transition-colors cursor-pointer">
+                      <Link href={link.href} className="w-full px-3.5 py-2.5 text-sm font-medium text-primary-foreground/85 hover:text-accent hover:bg-white/5 rounded-lg transition-colors cursor-pointer">
                         {link.label}
                       </Link>
                     </DropdownMenuItem>
@@ -129,8 +130,8 @@ export function Header() {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <button className="flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 outline-none">
-                Trucks <ChevronDown className="h-4 w-4" />
+              <button className="flex items-center gap-1.5 px-3.5 py-2 text-[15px] font-semibold tracking-wide text-primary-foreground/85 outline-none">
+                Trucks & Fleet <ChevronDown className="h-4 w-4 opacity-70" />
               </button>
             )}
 
@@ -138,27 +139,27 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary-foreground/70 transition-all hover:text-accent group"
+                className="relative px-3.5 py-2 text-[15px] font-semibold tracking-wide text-primary-foreground/85 transition-colors hover:text-accent group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:left-4 group-hover:w-[calc(100%-32px)]" />
+                <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:left-3.5 group-hover:w-[calc(100%-28px)]" />
               </Link>
             ))}
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden items-center gap-4 lg:flex">
-            <div className="flex items-center gap-3 mr-2">
-              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-accent transition-colors">
-                <Facebook className="h-5 w-5" />
+          <div className="hidden items-center gap-3 lg:flex">
+            <div className="flex items-center gap-2.5 mr-1">
+              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="p-1.5 text-primary-foreground/70 hover:text-accent transition-colors" title="Facebook">
+                <Facebook className="h-4 w-4" />
               </a>
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-accent transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="p-1.5 text-primary-foreground/70 hover:text-accent transition-colors" title="Instagram">
+                <Instagram className="h-4 w-4" />
               </a>
             </div>
             <ThemeToggle />
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-              <Button className="bg-accent text-accent-foreground hover:bg-[#d06a18] font-black uppercase tracking-widest gap-2 shadow-lg shadow-accent/20">
+              <Button className="bg-accent text-accent-foreground hover:bg-[#d06a18] font-bold text-sm tracking-wide px-5 py-2.5 rounded-xl shadow-lg shadow-accent/20 transition-all hover:scale-[1.02]">
                 Chat With Us
               </Button>
             </a>
@@ -168,7 +169,7 @@ export function Header() {
           <div className="flex items-center gap-2 lg:hidden">
             <ThemeToggle />
             <button
-              className="text-primary-foreground p-2 focus:outline-none"
+              className="text-primary-foreground p-2 rounded-lg hover:bg-white/5 transition-colors focus:outline-none"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
             >
@@ -181,12 +182,12 @@ export function Header() {
         {mobileOpen && (
           <div className="fixed inset-0 top-[60px] z-50 bg-primary/98 backdrop-blur-2xl lg:hidden animate-fade-in overflow-y-auto">
             <nav className="flex flex-col px-6 py-8 h-full" aria-label="Mobile navigation">
-              <div className="flex items-center gap-6 mb-8 pb-8 border-b border-primary-foreground/10">
-                <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/80 font-bold">
-                  <Facebook className="h-6 w-6 text-accent" /> Facebook
+              <div className="flex items-center gap-6 mb-6 pb-6 border-b border-primary-foreground/10">
+                <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/85 font-medium text-sm">
+                  <Facebook className="h-5 w-5 text-accent" /> Facebook
                 </a>
-                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/80 font-bold">
-                  <Instagram className="h-6 w-6 text-accent" /> Instagram
+                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/85 font-medium text-sm">
+                  <Instagram className="h-5 w-5 text-accent" /> Instagram
                 </a>
               </div>
               
@@ -194,7 +195,7 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="py-4 text-xl font-black uppercase tracking-widest text-primary-foreground/80 transition-colors hover:text-accent border-b border-primary-foreground/5"
+                  className="py-3.5 text-lg font-semibold tracking-wide text-primary-foreground/90 transition-colors hover:text-accent border-b border-primary-foreground/5"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -203,13 +204,13 @@ export function Header() {
 
               {/* Mobile Trucks Section */}
               <div className="py-4 border-b border-primary-foreground/5">
-                <p className="text-[10px] font-black uppercase tracking-[0.3em] text-accent mb-4">Our Trucks</p>
-                <div className="grid grid-cols-2 gap-4">
+                <p className="text-xs font-bold uppercase tracking-wider text-accent mb-3">Trucks & Fleet Options</p>
+                <div className="grid grid-cols-2 gap-3">
                   {truckLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="text-sm font-bold uppercase tracking-widest text-primary-foreground/60 hover:text-accent transition-colors"
+                      className="text-sm font-medium text-primary-foreground/75 hover:text-accent transition-colors py-1"
                       onClick={() => setMobileOpen(false)}
                     >
                       {link.label}
@@ -222,22 +223,22 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="py-4 text-xl font-black uppercase tracking-widest text-primary-foreground/80 transition-colors hover:text-accent border-b border-primary-foreground/5"
+                  className="py-3.5 text-lg font-semibold tracking-wide text-primary-foreground/90 transition-colors hover:text-accent border-b border-primary-foreground/5"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
               
-              <div className="mt-8 flex flex-col gap-4 pb-12">
+              <div className="mt-8 flex flex-col gap-3.5 pb-12">
                 <a href="tel:+2348020890065">
-                  <Button variant="outline" className="w-full border-primary-foreground/20 text-primary-foreground bg-white/5 py-7 text-lg font-bold gap-3">
-                    <Phone className="h-5 w-5 text-accent" />
+                  <Button variant="outline" className="w-full border-primary-foreground/20 text-primary-foreground bg-white/5 py-6 text-base font-semibold gap-2.5 rounded-xl">
+                    <Phone className="h-4 w-4 text-accent" />
                     <span>Call Sales Office</span>
                   </Button>
                 </a>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full bg-accent text-accent-foreground py-7 text-lg font-black uppercase tracking-widest gap-3">
+                  <Button className="w-full bg-accent text-accent-foreground py-6 text-base font-bold tracking-wide gap-2.5 rounded-xl">
                     Request Pricing
                   </Button>
                 </a>
