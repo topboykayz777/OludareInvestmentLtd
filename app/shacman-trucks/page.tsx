@@ -7,8 +7,8 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Shacman F3000 & X3000 Price in Nigeria | Premium Shacman Dealer Lagos",
-  description: "Buy high-performance Shacman F3000 and X3000 trucks in Lagos. Premium heavy-duty solutions powered by Weichai engines. Visit our Shacman yard at Ojodu Berger today.",
+  title: "Shacman F3000 & X3000 Price in Nigeria | Premium Shacman Dealer Lagos 2026",
+    description: "Buy high-performance Shacman F3000 and X3000 trucks in Lagos. Premium heavy-duty solutions powered by Weichai engines. Visit our Shacman yard at Ojodu Berger today.",
   keywords: [
     "shacman f3000 price in nigeria", "shacman x3000 tractor head price", 
     "shacman truck dealer ojodu berger", "shacman dump truck lagos", 
@@ -22,7 +22,7 @@ export default function ShacmanTrucksPage() {
     <main>
       <Header />
       <LandingHero 
-        title="Shacman F3000 & X3000 Price Guide 2025"
+        title="Shacman F3000 & X3000 Price Guide 2026"
         subtitle="Premium Industrial Engineering"
         description="Experience the power of MAN technology and Weichai engines. We supply the most durable Shacman F3000 dump trucks and X3000 tractor heads to major construction firms across Nigeria."
         ctaText="Request Shacman Quote"

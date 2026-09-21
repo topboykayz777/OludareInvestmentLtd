@@ -7,10 +7,10 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "HOWO 371 Price in Nigeria 2025 | Brand New Sinotruk HOWO Tippers Lagos",
-  description: "Get the latest HOWO 371 price in Nigeria for 2025. Official Sinotruk HOWO dealer in Lagos supplying 371HP and 420HP dump trucks, tractor heads, and CNG models at Ojodu Berger.",
+  title: "HOWO 371 Price in Nigeria 2026 | Brand New Sinotruk HOWO Tippers Lagos",
+    description: "Get the latest HOWO 371 price in Nigeria for 2026. Official Sinotruk HOWO dealer in Lagos supplying 371HP and 420HP dump trucks, tractor heads, and CNG models at Ojodu Berger.",
   keywords: [
-    "HOWO 371 price in nigeria 2025", "howo 371 tipper price in lagos", 
+    "HOWO 371 price in nigeria 2026", "howo 371 tipper price in lagos",
     "buy brand new sinotruk howo nigeria", "howo 371 specifications", 
     "sinotruk howo dealer lagos", "howo 371 engine price nigeria", 
     "howo 10 wheeler price nigeria", "howo cng truck price lagos"
@@ -22,7 +22,7 @@ export default function HowoTrucksPage() {
     <main>
       <Header />
       <LandingHero 
-        title="HOWO 371 Price in Nigeria: 2025 Market Guide"
+        title="HOWO 371 Price in Nigeria: 2026 Market Guide"
         subtitle="Official Sinotruk Agent - RC 1042746"
         description="The backbone of Nigerian construction. We provide direct factory pricing for the HOWO 371 (WD615.47) and HOWO 420HP models, with guaranteed genuine spare parts support at our Ojodu Berger yard."
         ctaText="Get Today's HOWO Price"
@@ -38,7 +38,7 @@ export default function HowoTrucksPage() {
         filterType="brand"
         filterValue="HOWO"
         title="Verified HOWO 371 & 420 Inventory"
-        description="All units are current 2024/2025 models, tropicalized for the Nigerian terrain and ready for immediate deployment."
+        description="All units are current 2025/2026 models, tropicalized for the Nigerian terrain and ready for immediate deployment."
       />
 
       <section className="bg-background py-16 lg:py-24">

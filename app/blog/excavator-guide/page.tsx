@@ -26,7 +26,7 @@ export default function ExcavatorBlog() {
           
           <div className="mb-10 flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-y border-border py-4">
             <span className="flex items-center gap-2"><User className="h-4 w-4" /> Project Specialist</span>
-            <span className="flex items-center gap-2"><Calendar className="h-4 w-4" /> Jan 10, 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="h-4 w-4" /> Jan 10, 2026</span>
             <span className="flex items-center gap-2"><Clock className="h-4 w-4" /> 6 min read</span>
           </div>
 

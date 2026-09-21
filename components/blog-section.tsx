@@ -22,39 +22,39 @@ const articles = [
     date: "March 10, 2026",
     author: "Engr. Oludare",
     readTime: "10 min read",
-    href: "/blog/howo-371-price-nigeria-2025",
-    featured: false
-  },
-  {
-    title: "Shacman F3000 vs. HOWO 371: Which is the King of Nigerian Roads?",
-    excerpt: "A deep-dive technical comparison of the two most popular truck models in Lagos. Engine power, Weichai vs WD615, parts availability, and resale value.",
-    image: "/images/trucks/shacman-orange-close.jpg",
-    date: "May 20, 2025",
-    author: "Engr. Oludare",
-    readTime: "12 min read",
-    href: "/blog/shacman-vs-howo",
-    featured: false
-  },
-  {
-    title: "5 Things to Inspect Before Buying a Used Tipper in Lagos",
-    excerpt: "Avoid being cheated! Our senior engineers show you the exact blow-by engine test, chassis crack checks, and customs paper verification checklist.",
-    image: "/images/trucks/howo-dump-white-close.jpg",
-    date: "May 15, 2025",
-    author: "Engr. Oludare",
-    readTime: "10 min read",
-    href: "/blog/used-truck-inspection",
-    featured: false
-  },
-  {
-    title: "How to Start a Profitable Haulage Business in Nigeria (2026 Guide)",
-    excerpt: "Learn how to start and scale a tipper or trailer haulage business. Profit analysis, driver management, diesel math, and startup fleet financing.",
-    image: "/images/trucks/howo-dump-yellow-fleet.jpg",
-    date: "May 25, 2025",
-    author: "Sales Team",
-    readTime: "15 min read",
-    href: "/blog/haulage-business-guide",
-    featured: false
-  }
+    href: "/blog/howo-371-price-nigeria-2026",
+        featured: false
+      },
+      {
+        title: "Shacman F3000 vs. HOWO 371: Which is the King of Nigerian Roads?",
+        excerpt: "A deep-dive technical comparison of the two most popular truck models in Lagos. Engine power, Weichai vs WD615, parts availability, and resale value.",
+        image: "/images/trucks/shacman-orange-close.jpg",
+        date: "May 20, 2026",
+        author: "Engr. Oludare",
+        readTime: "12 min read",
+        href: "/blog/shacman-vs-howo",
+        featured: false
+      },
+      {
+        title: "5 Things to Inspect Before Buying a Used Tipper in Lagos",
+        excerpt: "Avoid being cheated! Our senior engineers show you the exact blow-by engine test, chassis crack checks, and customs paper verification checklist.",
+        image: "/images/trucks/howo-dump-white-close.jpg",
+        date: "May 15, 2026",
+        author: "Engr. Oludare",
+        readTime: "10 min read",
+        href: "/blog/used-truck-inspection",
+        featured: false
+      },
+      {
+        title: "How to Start a Profitable Haulage Business in Nigeria (2026 Guide)",
+        excerpt: "Learn how to start and scale a tipper or trailer haulage business. Profit analysis, driver management, diesel math, and startup fleet financing.",
+        image: "/images/trucks/howo-dump-yellow-fleet.jpg",
+        date: "May 25, 2026",
+        author: "Sales Team",
+        readTime: "15 min read",
+        href: "/blog/haulage-business-guide",
+        featured: false
+      }
 ]
 
 export function BlogSection() {

@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "How to Start a Profitable Haulage Business in Nigeria (2025 Guide)",
+  title: "How to Start a Profitable Haulage Business in Nigeria (2026 Guide)",
   description: "Learn how to start and scale a tipper or trailer haulage business in Nigeria. Profit analysis, truck selection, and driver management tips.",
   keywords: [
     "haulage business Nigeria", "start transport company Lagos", "tipper business profit Nigeria", 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "truck fleet management", "starting haulage with one truck", "HOWO 371 for business", 
     "Shacman truck investment", "haulage contracts Nigeria", "truck driver management Lagos", 
     "diesel cost vs profit Nigeria", "interstate haulage Nigeria", "logistics business plan Nigeria", 
-    "truck financing for startups", "Oludare Investment haulage", "profitable business ideas Nigeria 2025", 
+    "truck financing for startups", "Oludare Investment haulage", "profitable business ideas Nigeria 2026",
     "heavy duty truck ROI", "trucking industry Nigeria"
   ],
 }
@@ -40,8 +40,8 @@ export default function HaulageBusinessBlog() {
         "url": "https://www.oludareinvestmentltd.com.ng/images/logo/oil-logo-full.jpg"
       }
     },
-    "datePublished": "2025-05-25",
-    "dateModified": "2025-05-25"
+    "datePublished": "2026-05-25",
+    "dateModified": "2026-05-25"
   }
 
   return (
@@ -60,10 +60,10 @@ export default function HaulageBusinessBlog() {
           </h1>
           
           <div className="mb-10 flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-y border-border py-4">
-            <span className="flex items-center gap-2"><User className="h-4 w-4" /> Sales Team</span>
-            <span className="flex items-center gap-2"><Calendar className="h-4 w-4" /> May 25, 2025</span>
-            <span className="flex items-center gap-2"><Clock className="h-4 w-4" /> 15 min read</span>
-          </div>
+                      <span className="flex items-center gap-2"><User className="h-4 w-4" /> Sales Team</span>
+                      <span className="flex items-center gap-2"><Calendar className="h-4 w-4" /> May 25, 2026</span>
+                      <span className="flex items-center gap-2"><Clock className="h-4 w-4" /> 15 min read</span>
+                    </div>
 
           <div className="relative mb-12 aspect-video overflow-hidden rounded-3xl shadow-2xl">
             <Image
@@ -76,7 +76,7 @@ export default function HaulageBusinessBlog() {
 
           <div className="prose prose-lg dark:prose-invert max-w-none space-y-8 text-muted-foreground leading-relaxed">
             <p className="text-xl text-foreground font-medium">
-              The demand for heavy-duty haulage in Nigeria is at an all-time high. With massive infrastructure projects and the growth of the mining sector, owning a truck is one of the most stable investments you can make in 2025.
+              The demand for heavy-duty haulage in Nigeria is at an all-time high. With massive infrastructure projects and the growth of the mining sector, owning a truck is one of the most stable investments you can make in 2026.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">

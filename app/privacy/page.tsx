@@ -9,7 +9,7 @@ export default function PrivacyPage() {
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
           <h1 className="mb-8 text-4xl font-black text-foreground lg:text-5xl">Privacy Policy</h1>
           <div className="prose prose-slate dark:prose-invert max-w-none space-y-6 text-muted-foreground">
-            <p>Last updated: March 2025</p>
+            <p>Last updated: March 2026</p>
             <p>
               At Oludare Investment Ltd (OIL), we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or interact with our services.
             </p>

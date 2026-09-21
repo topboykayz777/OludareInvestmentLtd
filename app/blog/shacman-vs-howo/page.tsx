@@ -40,8 +40,8 @@ export default function ShacmanVsHowoBlog() {
         "url": "https://www.oludareinvestmentltd.com.ng/images/logo/oil-logo-full.jpg"
       }
     },
-    "datePublished": "2025-05-20",
-    "dateModified": "2025-05-20"
+    "datePublished": "2026-05-20",
+        "dateModified": "2026-05-20"
   }
 
   return (
@@ -61,7 +61,7 @@ export default function ShacmanVsHowoBlog() {
           
           <div className="mb-10 flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-y border-border py-4">
             <span className="flex items-center gap-2"><User className="h-4 w-4" /> Engr. Oludare</span>
-            <span className="flex items-center gap-2"><Calendar className="h-4 w-4" /> May 20, 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="h-4 w-4" /> May 20, 2026</span>
             <span className="flex items-center gap-2"><Clock className="h-4 w-4" /> 12 min read</span>
           </div>
 
@@ -108,7 +108,7 @@ export default function ShacmanVsHowoBlog() {
               </div>
             </div>
 
-            <h2 className="text-2xl font-bold text-foreground">3. The Price Factor (2025 Update)</h2>
+            <h2 className="text-2xl font-bold text-foreground">3. The Price Factor (2026 Update)</h2>
             <p>
               Currently, a brand new Shacman X3000 or F3000 commands a premium over the HOWO 371. However, the gap is closing as more operators realize the long-term fuel savings of the Shacman.
             </p>

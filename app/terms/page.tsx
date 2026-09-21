@@ -9,7 +9,7 @@ export default function TermsPage() {
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
           <h1 className="mb-8 text-4xl font-black text-foreground lg:text-5xl">Terms of Service</h1>
           <div className="prose prose-slate dark:prose-invert max-w-none space-y-6 text-muted-foreground">
-            <p>Last updated: March 2025</p>
+            <p>Last updated: March 2026</p>
             <p>
               Welcome to Oludare Investment Ltd. By accessing our website or purchasing our equipment, you agree to comply with and be bound by the following terms and conditions.
             </p>

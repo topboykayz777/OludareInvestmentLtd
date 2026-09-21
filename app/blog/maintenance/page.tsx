@@ -26,7 +26,7 @@ export default function MaintenanceBlog() {
           
           <div className="mb-10 flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-y border-border py-4">
             <span className="flex items-center gap-2"><User className="h-4 w-4" /> Engr. Oludare</span>
-            <span className="flex items-center gap-2"><Calendar className="h-4 w-4" /> Feb 15, 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="h-4 w-4" /> Feb 15, 2026</span>
             <span className="flex items-center gap-2"><Clock className="h-4 w-4" /> 5 min read</span>
           </div>
 
