@@ -7,13 +7,14 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Shacman F3000 & X3000 Price in Nigeria | Premium Shacman Dealer Lagos 2026",
-    description: "Buy high-performance Shacman F3000 and X3000 trucks in Lagos. Premium heavy-duty solutions powered by Weichai engines. Visit our Shacman yard at Ojodu Berger today.",
+  title: "Shacman F3000 & X3000 Trucks in Nigeria | Dealer Lagos 2026",
+  description: "Explore Shacman F3000 dump trucks and X3000 tractor heads in Lagos. Ask Oludare Investment Ltd about current availability, specifications, inspection, delivery, and direct sales contact.",
   keywords: [
-    "shacman f3000 price in nigeria", "shacman x3000 tractor head price", 
-    "shacman truck dealer ojodu berger", "shacman dump truck lagos", 
-    "weichai engine price nigeria", "shacman vs howo truck nigeria", 
-    "premium heavy duty trucks lagos"
+    "shacman f3000 for sale nigeria", "shacman f3000 dump truck lagos", "shacman x3000 tractor head nigeria",
+    "shacman x3000 for sale lagos", "shacman truck dealer ojodu berger", "shacman dump truck lagos",
+    "shacman 380hp truck nigeria", "shacman 420hp tractor head nigeria", "weichai shacman truck nigeria",
+    "hande axle shacman nigeria", "shacman quarry truck nigeria", "shacman haulage truck nigeria",
+    "shacman vs howo truck nigeria", "premium heavy duty trucks lagos"
   ],
 }
 
@@ -22,7 +23,7 @@ export default function ShacmanTrucksPage() {
     <main>
       <Header />
       <LandingHero 
-        title="Shacman F3000 & X3000 Price Guide 2026"
+        title="Shacman F3000 & X3000 Availability & Buyer Guide 2026"
         subtitle="Premium Industrial Engineering"
         description="Experience the power of MAN technology and Weichai engines. We supply the most durable Shacman F3000 dump trucks and X3000 tractor heads to major construction firms across Nigeria."
         ctaText="Check Shacman Availability"
@@ -69,7 +70,7 @@ export default function ShacmanTrucksPage() {
                   </div>
                   <div>
                     <p className="font-bold text-foreground">F3000 Series</p>
-                    <p className="text-sm">The most popular series in Nigeria. Best for dump trucks and tippers operating in mining sites.</p>
+                    <p className="text-sm">A rugged option for dump trucks, quarrying, mining, and difficult construction sites. Common configurations use Weichai power, FAST transmissions, and heavy-duty HANDE/MAN axle systems.</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
@@ -78,10 +79,37 @@ export default function ShacmanTrucksPage() {
                   </div>
                   <div>
                     <p className="font-bold text-foreground">X3000 Series</p>
-                    <p className="text-sm">Next-generation premium cabin. Ideal for logistics companies requiring high driver comfort and aerodynamic efficiency.</p>
+                    <p className="text-sm">A premium-cabin option for tractor-head and long-haul operations, with configuration-dependent engine power, FAST gearbox, and driver-focused features.</p>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-12 grid gap-6 sm:grid-cols-2">
+              <div className="rounded-2xl border border-border bg-card p-6">
+                <h3 className="text-lg font-bold text-foreground">F3000 Buyer Checklist</h3>
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                  <li>• Confirm 6x4 or 8x4 configuration</li>
+                  <li>• Confirm engine model and horsepower</li>
+                  <li>• Inspect chassis, tipping body, axles, and hydraulics</li>
+                  <li>• Ask about new, foreign-used, or refurbished condition</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-border bg-card p-6">
+                <h3 className="text-lg font-bold text-foreground">X3000 Buyer Checklist</h3>
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                  <li>• Confirm tractor-head or dump-truck configuration</li>
+                  <li>• Confirm engine, gearbox, axle, and cab specification</li>
+                  <li>• Check suitability for route and trailer type</li>
+                  <li>• Request current availability directly from sales</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-12 rounded-2xl bg-primary p-8 text-white">
+              <h3 className="text-2xl font-bold">Need a Specific Shacman Configuration?</h3>
+              <p className="mt-3 max-w-2xl text-white/75">Send the model, intended use, preferred condition, quantity, and location. Our team will confirm the available unit and its exact specifications directly.</p>
+              <a href="https://wa.me/2348105955892?text=Hello%2C%20I%20need%20a%20Shacman%20truck.%20Please%20share%20available%20F3000%20or%20X3000%20units%2C%20specifications%2C%20condition%2C%20and%20location." target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex rounded-xl bg-accent px-6 py-3 font-bold text-white hover:bg-[#d06a18]">Contact Shacman Sales</a>
             </div>
           </div>
         </div>
