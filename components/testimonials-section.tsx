@@ -117,17 +117,17 @@ export function TestimonialsSection() {
           </div>
         </div>
 
-        {/* Google Review CTA */}
+        {/* Google location CTA */}
         <div className="mb-12 rounded-2xl bg-primary p-6 lg:p-8 text-center text-white">
-          <h3 className="text-xl font-bold mb-2">Happy with our service?</h3>
-          <p className="text-sm text-white/70 mb-6">Help other business owners find reliable trucks by leaving us a review on Google.</p>
-          <a 
-            href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review" 
-            target="_blank" 
+          <h3 className="text-xl font-bold mb-2">Want to visit the yard?</h3>
+          <p className="text-sm text-white/70 mb-6">Find Oludare Investment Ltd at Ojodu Berger and contact the sales team before your visit.</p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Oludare%20Investment%20Ltd%20Ojodu%20Berger%20Lagos"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <Button className="bg-accent hover:bg-[#d06a18] font-bold gap-2">
-              <ExternalLink className="h-4 w-4" /> Review us on Google
+              <ExternalLink className="h-4 w-4" /> Find us on Google Maps
             </Button>
           </a>
         </div>

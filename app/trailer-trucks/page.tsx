@@ -20,7 +20,7 @@ export default function TrailerTrucksPage() {
         title="Trailers & Long-Haul Logistics"
         subtitle="Nationwide Transport Solutions"
         description="Move heavy equipment and containers with ease. We provide high-capacity tractor heads and specialized trailers engineered for Nigerian roads."
-        ctaText="Get Trailer Quote"
+        ctaText="Check Trailer Availability"
       />
       
       <div className="bg-secondary pt-8">

@@ -115,7 +115,7 @@ export default function ShacmanVsHowoBlog() {
 
             <div className="rounded-2xl bg-primary p-8 text-white mt-12">
               <h3 className="text-2xl font-bold mb-4">Get Today's Market Price</h3>
-              <p className="mb-6 opacity-80">Prices for both brands change weekly based on the CBN exchange rate and port clearing costs. Don't guess—get a real-time quote now.</p>
+              <p className="mb-6 opacity-80">Availability and pricing can change with model, condition, exchange rates, and delivery requirements. Contact the sales team directly for the current details.</p>
               <Link href="https://wa.me/2348105955892?text=I%20want%20to%20compare%20prices%20for%20Shacman%20and%20HOWO%20trucks.">
                 <button className="bg-accent text-white px-8 py-4 rounded-lg font-bold hover:bg-[#d06a18] transition-all w-full sm:w-auto">
                   Chat with Sales Office

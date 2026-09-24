@@ -42,7 +42,7 @@ export function QuoteForm() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const whatsappMessage = `*New Corporate Quote Request*%0A%0A` +
+    const whatsappMessage = `*New Corporate Enquiry*%0A%0A` +
       `*Name:* ${values.name}%0A` +
       `*Company:* ${values.company}%0A` +
       `*Email:* ${values.email}%0A` +
@@ -60,8 +60,8 @@ export function QuoteForm() {
 
   return (
     <div className="rounded-2xl border border-border bg-card p-6 shadow-lg lg:p-8">
-      <h3 className="mb-2 text-xl font-bold text-foreground">Corporate Quote Request</h3>
-      <p className="mb-6 text-sm text-muted-foreground">Fill this form for formal procurement inquiries.</p>
+      <h3 className="mb-2 text-xl font-bold text-foreground">Corporate Enquiry</h3>
+            <p className="mb-6 text-sm text-muted-foreground">Tell us what you need and our team will contact you directly.</p>
       
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -171,8 +171,8 @@ export function QuoteForm() {
           />
 
           <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-bold py-6">
-            Submit Quote Request
-          </Button>
+                      Send Enquiry to Sales
+                    </Button>
         </form>
       </Form>
     </div>

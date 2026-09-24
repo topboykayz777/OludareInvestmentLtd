@@ -22,7 +22,7 @@ const articles = [
     date: "March 10, 2026",
     author: "Engr. Oludare",
     readTime: "10 min read",
-    href: "/blog/howo-371-price-nigeria-2026",
+    href: "/blog/howo-371-price-nigeria-2025",
         featured: false
       },
       {

@@ -33,6 +33,8 @@ const truckLinks = [
   { label: "Trailer Trucks", href: "/trailer-trucks" },
   { label: "Used Trucks", href: "/used-trucks" },
   { label: "Truck Financing", href: "/truck-financing" },
+  { label: "Tractor Heads", href: "/tractor-heads-for-sale-nigeria" },
+  { label: "Lagos Truck Dealer", href: "/truck-dealer-lagos" },
   { label: "Sourcing & Inspection", href: "/sourcing-agent" },
 ];
 

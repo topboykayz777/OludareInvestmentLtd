@@ -25,7 +25,7 @@ export default function ShacmanTrucksPage() {
         title="Shacman F3000 & X3000 Price Guide 2026"
         subtitle="Premium Industrial Engineering"
         description="Experience the power of MAN technology and Weichai engines. We supply the most durable Shacman F3000 dump trucks and X3000 tractor heads to major construction firms across Nigeria."
-        ctaText="Request Shacman Quote"
+        ctaText="Check Shacman Availability"
       />
       
       <div className="bg-secondary pt-8">

@@ -20,7 +20,7 @@ export default function DumpTrucksPage() {
         title="Heavy-Duty Dump Trucks & Tippers"
         subtitle="Construction & Mining Specialists"
         description="The most rugged tippers for the Nigerian terrain. From 20m³ to 30m³ capacities, our HOWO and Shacman dump trucks are built to move mountains."
-        ctaText="Request Tipper Quote"
+        ctaText="Check Tipper Availability"
       />
       
       <div className="bg-secondary pt-8">

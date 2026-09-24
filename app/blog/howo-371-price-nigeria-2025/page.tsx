@@ -93,7 +93,7 @@ export default function PriceGuideBlog() {
                 <tbody>
                   <tr className="border-b border-border">
                     <td className="p-4 font-bold">Brand New (Factory 2026)</td>
-                    <td className="p-4">Contact for Quote (FX Dependent)</td>
+                    <td className="p-4">Contact sales for current availability and price</td>
                   </tr>
                   <tr className="border-b border-border">
                     <td className="p-4 font-bold">Certified Pre-Owned (Clean)</td>

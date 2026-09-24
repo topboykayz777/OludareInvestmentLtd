@@ -56,7 +56,7 @@ export function ContactSection() {
             Ready to Move Your Business Forward?
           </h2>
           <p className="mx-auto max-w-xl text-muted-foreground leading-relaxed">
-            {"Visit our yard at Ojodu Berger or fill out the form below for a formal corporate quote."}
+            {"Visit our yard at Ojodu Berger or fill out the form below to tell our sales team what you need."}
           </p>
         </div>
 
