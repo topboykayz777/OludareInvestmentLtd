@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Shacman F3000 & X3000 Trucks in Nigeria | Dealer Lagos",
+  title: "Shacman F3000 & X3000 Trucks in Nigeria | Dealer Lagos 2026",
   description: "Explore Shacman F3000 dump trucks and X3000 tractor heads in Lagos. Ask Oludare Investment Ltd about current availability, specifications, inspection, delivery, and direct sales contact.",
   keywords: [
     "shacman f3000 for sale nigeria", "shacman f3000 dump truck lagos", "shacman x3000 tractor head nigeria",
@@ -23,7 +23,7 @@ export default function ShacmanTrucksPage() {
     <main>
       <Header />
       <LandingHero 
-        title="Shacman F3000 & X3000 Trucks for Nigerian Work"
+        title="Shacman F3000 & X3000 Availability & Buyer Guide 2026"
         subtitle="Premium Industrial Engineering"
         description="Explore Shacman F3000 dump trucks and X3000 tractor heads for quarrying, construction, mining, and long-haul work. Ask sales for the current price and exact configuration."
         ctaText="Ask for Shacman Price & Specs"

@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 // SEO constants
-const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Truck Dealer & Sourcing Agent Lagos'
+const SITE_TITLE = 'Oludare Investment Ltd (OIL) | #1 Truck Dealer & Sourcing Agent Lagos 2026'
 const SITE_DESCRIPTION =
   'Oludare Investment Ltd (RC 1042746) supplies and sources HOWO, Shacman, dump trucks, tractor heads, trailers, excavators, and genuine spare parts from Ojodu Berger, Lagos for buyers across Nigeria.'
 const SITE_URL = 'https://www.oludareinvestmentltd.com.ng'

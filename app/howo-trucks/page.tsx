@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "HOWO 371 Trucks in Nigeria | Sinotruk HOWO Tippers Lagos",
+  title: "HOWO 371 Price in Nigeria 2026 | Brand New Sinotruk HOWO Tippers Lagos",
     description: "Explore HOWO 371 and 420HP dump trucks, tractor heads, and CNG models supplied and sourced by Oludare Investment Ltd in Ojodu Berger, Lagos. Ask sales for current price and specification.",
   keywords: [
     "HOWO 371 price in nigeria", "howo 371 tipper price in lagos",
@@ -22,7 +22,7 @@ export default function HowoTrucksPage() {
     <main>
       <Header />
       <LandingHero 
-        title="HOWO 371 & 420HP Trucks for Nigerian Work"
+        title="HOWO 371 Price in Nigeria: 2026 Market Guide"
         subtitle="Sinotruk HOWO Supply & Sourcing - RC 1042746"
         description="The backbone of Nigerian construction. Explore HOWO 371, 420HP, tractor head, CNG, and tipper configurations, then ask sales for the current price, exact specification, and delivery details."
         ctaText="Ask for HOWO Price & Specs"

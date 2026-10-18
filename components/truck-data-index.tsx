@@ -17,7 +17,7 @@ export function TruckDataIndex() {
     <section className="bg-background py-16 lg:py-24 border-t border-border">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mb-10">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">Nigeria Truck Buyer Index</p>
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">2026 Industry Index</p>
           <h2 className="text-3xl font-black text-foreground lg:text-4xl">Heavy Equipment Specifications Index (Lagos Market)</h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
             Official technical specifications and benchmark payload capacities for heavy-duty trucks and machinery operating across Lagos State and Nigeria.
@@ -56,7 +56,7 @@ export function TruckDataIndex() {
             <span>• Best HOWO Truck Lagos</span>
             <span>• Best Shacman Truck Nigeria</span>
             <span>• Where to Buy Trucks in Ojodu Berger</span>
-            <span>• Current HOWO 371 Tipper Price</span>
+            <span>• HOWO 371 Tipper Price 2026</span>
             <span>• Direct Port Used Tippers Apapa</span>
             <span>• Tipper Trucks in Ikeja & Lekki</span>
             <span>• Heavy Equipment Sourcing Agent Lagos</span>
