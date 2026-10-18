@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/best-trucks-to-buy-in-lagos-2026`,
-      lastModified: new Date('2026-08-05'),
+      lastModified: new Date('2026-10-18'),
       changeFrequency: 'weekly',
       priority: 1,
     },

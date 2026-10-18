@@ -3,7 +3,7 @@
 import { CheckCircle2, MapPin, Calendar } from "lucide-react"
 
 const deliveries = [
-  { unit: "3x HOWO 371 Tippers", location: "Abuja FCT", date: "October 2026" },
+  { unit: "3x HOWO 371 Tippers", location: "Abuja FCT", date: "October 18, 2026" },
   { unit: "1x Shacman X3000 Tractor", location: "Port Harcourt", date: "September 2026" },
   { unit: "2x XCMG Excavators", location: "Enugu State", date: "September 2026" },
   { unit: "5x HOWO CNG Trucks", location: "Lagos State", date: "August 2026" },
