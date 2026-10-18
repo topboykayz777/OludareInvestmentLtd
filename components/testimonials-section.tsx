@@ -30,7 +30,7 @@ const testimonials = [
     text: "Our excavator broke down on site and we needed a replacement fast. Had an XCMG ready, closed the deal in 2 days. Straightforward, no runaround. Would deal again.",
     rating: 5,
     product: "XCMG Excavator",
-    date: "Jan 2026",
+    date: "Recent customer feedback",
       },
       {
         name: "Chief Emeka N.",
@@ -39,7 +39,7 @@ const testimonials = [
         text: "Bought 2 CNG trucks and a low-bed. Machines came in decent shape. Needed spare parts 5 months later and he had them. After-sales has been okay so far.",
         rating: 4,
         product: "CNG Trucks & Trailer",
-        date: "Mar 2026",
+        date: "Recent customer feedback",
   },
   {
     name: "Musa D.",

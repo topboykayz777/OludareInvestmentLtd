@@ -6,7 +6,11 @@ export const products = [
     category: "Trucks",
     title: "Shacman F3000 Dump Truck",
     description: "Heavy-duty 6x4 tipper optimized for Nigerian mining and construction sites.",
-    images: [{ src: "/images/trucks/shacman-orange-close.jpg", alt: "Shacman F3000 orange" }],
+    images: [
+      { src: "/images/trucks/shacman-orange-close.jpg", alt: "Shacman F3000 orange front detail" },
+      { src: "/images/trucks/shacman-f3000-dump-truck-orange.jpg", alt: "Shacman F3000 orange dump truck" },
+      { src: "/images/trucks/shacman-orange-fleet.jpg", alt: "Shacman F3000 dump truck fleet" },
+    ],
     hp: "380HP",
     engine: "Weichai WP10.380E22",
     isUsed: false
@@ -17,7 +21,11 @@ export const products = [
     category: "Trucks",
     title: "HOWO Sino Truck 371",
     description: "The most reliable workhorse in Lagos. 10-tyre dump truck with reinforced chassis.",
-    images: [{ src: "/images/trucks/howo-dump-white-close.jpg", alt: "HOWO 371 white" }],
+    images: [
+      { src: "/images/trucks/howo-dump-white-close.jpg", alt: "HOWO 371 white front detail" },
+      { src: "/images/trucks/howo-dump-white-fleet.jpg", alt: "HOWO 371 white dump truck fleet" },
+      { src: "/images/trucks/howo-sinotruck-dump-white.jpg", alt: "HOWO Sinotruk 371 dump truck" },
+    ],
     hp: "371HP",
     engine: "WD615.47",
     isUsed: false
@@ -28,7 +36,11 @@ export const products = [
     category: "Trucks",
     title: "HOWO 371 Heavy Tipper (Yellow)",
     description: "High-visibility yellow fleet units. Perfect for large scale earthmoving projects.",
-    images: [{ src: "/images/trucks/howo-dump-yellow-front.jpg", alt: "HOWO 371 yellow" }],
+    images: [
+      { src: "/images/trucks/howo-dump-yellow-front.jpg", alt: "HOWO 371 yellow front detail" },
+      { src: "/images/trucks/howo-dump-yellow-fleet.jpg", alt: "HOWO 371 yellow dump truck fleet" },
+      { src: "/images/trucks/howo-dump-white-tipping.jpg", alt: "HOWO dump truck tipping body" },
+    ],
     hp: "371HP",
     engine: "WD615.47",
     isUsed: false
@@ -39,7 +51,11 @@ export const products = [
     category: "Trucks",
     title: "Shacman X3000 Tractor Head",
     description: "Premium long-haul tractor head for interstate logistics and heavy container port work.",
-    images: [{ src: "/images/trucks/shacman-green-close.jpg", alt: "Shacman tractor green" }],
+    images: [
+      { src: "/images/trucks/shacman-green-close.jpg", alt: "Shacman X3000 green tractor head" },
+      { src: "/images/trucks/shacman-white-tractor.jpg", alt: "Shacman tractor head" },
+      { src: "/images/trucks/shacman-green-fleet.jpg", alt: "Shacman tractor head fleet" },
+    ],
     hp: "420HP",
     engine: "Weichai WP12",
     isUsed: false

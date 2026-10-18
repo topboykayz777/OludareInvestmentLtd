@@ -6,20 +6,20 @@ import { ArrowRight, Clock, User, Star } from "lucide-react"
 
 const articles = [
   {
-    title: "Best Trucks to Buy in Lagos (2026): Models, Verified Yards & Prices",
-    excerpt: "The definitive 2026 buyer's report. We rank the best HOWO and Shacman tippers, compare engines, expose unverified yard scams, and review current Lagos prices.",
+    title: "Best Trucks to Buy in Lagos: Models, Specs & Buying Guide",
+    excerpt: "A practical buyer's report on HOWO and Shacman tippers, engine choices, truck verification, and current Lagos buying questions.",
     image: "/images/trucks/shacman-fleet-green.jpg",
-    date: "August 5, 2026",
+    date: "Buyer guide",
     author: "Engr. Oludare & OIL Team",
     readTime: "18 min read",
     href: "/blog/best-trucks-to-buy-in-lagos-2026",
     featured: true
   },
   {
-    title: "HOWO 371 Price in Nigeria 2026: Comprehensive Buying Guide",
-    excerpt: "Looking for current prices? Discover Q3 2026 price ranges for brand new and direct port used Sinotruk HOWO 371 tippers in Ojodu Berger.",
+    title: "HOWO 371 Price in Nigeria: Current Buying Guide",
+    excerpt: "Looking for the current HOWO 371 price? Learn which specifications affect the quote and what to ask the sales team before buying.",
     image: "/images/trucks/howo-dump-white-fleet.jpg",
-    date: "March 10, 2026",
+    date: "Price guide",
     author: "Engr. Oludare",
     readTime: "10 min read",
     href: "/blog/howo-371-price-nigeria-2025",
@@ -29,7 +29,7 @@ const articles = [
         title: "Shacman F3000 vs. HOWO 371: Which is the King of Nigerian Roads?",
         excerpt: "A deep-dive technical comparison of the two most popular truck models in Lagos. Engine power, Weichai vs WD615, parts availability, and resale value.",
         image: "/images/trucks/shacman-orange-close.jpg",
-        date: "May 20, 2026",
+        date: "Comparison guide",
         author: "Engr. Oludare",
         readTime: "12 min read",
         href: "/blog/shacman-vs-howo",
@@ -39,17 +39,17 @@ const articles = [
         title: "5 Things to Inspect Before Buying a Used Tipper in Lagos",
         excerpt: "Avoid being cheated! Our senior engineers show you the exact blow-by engine test, chassis crack checks, and customs paper verification checklist.",
         image: "/images/trucks/howo-dump-white-close.jpg",
-        date: "May 15, 2026",
+        date: "Buyer checklist",
         author: "Engr. Oludare",
         readTime: "10 min read",
         href: "/blog/used-truck-inspection",
         featured: false
       },
       {
-        title: "How to Start a Profitable Haulage Business in Nigeria (2026 Guide)",
+        title: "How to Start a Profitable Haulage Business in Nigeria",
         excerpt: "Learn how to start and scale a tipper or trailer haulage business. Profit analysis, driver management, diesel math, and startup fleet financing.",
         image: "/images/trucks/howo-dump-yellow-fleet.jpg",
-        date: "May 25, 2026",
+        date: "Business guide",
         author: "Sales Team",
         readTime: "15 min read",
         href: "/blog/haulage-business-guide",
@@ -80,7 +80,7 @@ export function BlogSection() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <span className="absolute top-4 left-4 rounded-full bg-accent px-4 py-1 text-xs font-black uppercase tracking-widest text-white shadow-md">
-                ⭐ Featured 2026 Guide
+                ⭐ Featured Buyer Guide
               </span>
             </div>
             <div className="p-8 lg:p-10 lg:col-span-5 flex flex-col justify-between">
@@ -100,7 +100,7 @@ export function BlogSection() {
               <div>
                 <Link href={article.href}>
                   <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-white hover:bg-primary/90 transition-all">
-                    Read Full 2026 Guide
+                    Read Full Guide
                     <ArrowRight className="h-4 w-4" />
                   </button>
                 </Link>

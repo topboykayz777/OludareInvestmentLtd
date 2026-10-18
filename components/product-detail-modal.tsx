@@ -46,6 +46,15 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
                 className="object-cover"
               />
             </div>
+            {product.images.length > 1 && (
+              <div className="grid grid-cols-3 gap-2">
+                {product.images.slice(1).map((image: { src: string; alt: string }) => (
+                  <div key={image.src} className="relative aspect-[4/3] overflow-hidden rounded-lg border bg-muted">
+                    <Image src={image.src} alt={image.alt} fill className="object-cover" />
+                  </div>
+                ))}
+              </div>
+            )}
             <div className="grid grid-cols-2 gap-4">
               {specs.map((spec) => (
                 <div key={spec.label} className="rounded-lg bg-muted p-3">

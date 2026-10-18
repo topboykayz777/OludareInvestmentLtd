@@ -11,14 +11,14 @@ const slides = [
   {
     src: "/images/trucks/shacman-fleet-green.jpg",
     alt: "Premium Shacman F3000 dump trucks for sale in Lagos Nigeria - Oludare Investment Ltd",
-    headline: "Nigeria's #1 Shacman Truck Dealer",
-    sub: "Direct suppliers of high-performance Shacman F3000 and X3000 dump trucks. Built for the toughest Nigerian terrains."
+    headline: "Shacman F3000 & X3000 Trucks in Nigeria",
+    sub: "Explore heavy-duty Shacman dump trucks and tractor heads for quarrying, construction, haulage, and demanding Nigerian routes."
   },
   {
     src: "/images/trucks/howo-trucks-fleet-4-white-yard.jpg",
     alt: "HOWO Sino Trucks 371 and 420 models at Ojodu Berger yard Lagos - OIL",
-    headline: "Genuine HOWO Sino Trucks in Lagos",
-    sub: "From 6x4 tippers to 8x4 dump trucks, we provide the most reliable HOWO trucks with full spare parts support."
+    headline: "HOWO 371 & 420HP Trucks in Lagos",
+    sub: "Compare 6x4 tippers, 8x4 dump trucks, tractor heads, and genuine HOWO parts for construction and haulage work."
   },
   {
     src: "/images/excavators/liugong-excavators-loaders-yard.jpg",
@@ -115,7 +115,7 @@ export function HeroSection() {
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="group">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-[#d06a18] text-lg font-bold px-10 py-7 w-full sm:w-auto gap-3 shadow-[0_0_20px_rgba(232,119,30,0.4)] animate-pulse-glow transition-all hover:scale-105">
                 <WhatsAppIcon />
-                Request Pricing Now
+                Get Current Price & Specs
               </Button>
             </a>
             <a href="tel:+2348020890065">

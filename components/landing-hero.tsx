@@ -16,7 +16,7 @@ export function LandingHero({
   title,
   subtitle,
   description,
-  ctaText = "Request Pricing Now",
+  ctaText = "Ask for Current Price & Specs",
   whatsappUrl = "https://wa.me/2348105955892",
   phoneUrl = "tel:+2348020890065"
 }: LandingHeroProps) {

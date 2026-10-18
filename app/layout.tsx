@@ -5,9 +5,9 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 // SEO constants
-const SITE_TITLE = 'Oludare Investment Ltd (OIL) | #1 Truck Dealer & Sourcing Agent Lagos 2026'
+const SITE_TITLE = 'Oludare Investment Ltd (OIL) | Truck Dealer & Sourcing Agent Lagos'
 const SITE_DESCRIPTION =
-  'Oludare Investment Ltd (RC 1042746) is Nigeria\'s premier truck dealer and independent heavy equipment sourcing agency in Ojodu Berger, Lagos. Buy brand new & direct port used HOWO 371, Shacman F3000/X3000, dump trucks, lowbed trailers, excavators, and genuine spare parts across Lagos State.'
+  'Oludare Investment Ltd (RC 1042746) supplies and sources HOWO, Shacman, dump trucks, tractor heads, trailers, excavators, and genuine spare parts from Ojodu Berger, Lagos for buyers across Nigeria.'
 const SITE_URL = 'https://www.oludareinvestmentltd.com.ng'
 const SITE_IMAGE = '/images/logo/oil-logo-full.jpg'
 const TWITTER_SITE = '@OludareInvestment'
@@ -222,7 +222,7 @@ export default function RootLayout({
               ],
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
-                name: 'Heavy Duty Trucks & Machinery Catalog Lagos 2026',
+                name: 'Heavy Duty Trucks & Machinery Catalog Lagos',
                 itemListElement: [
                   {
                     '@type': 'Offer',

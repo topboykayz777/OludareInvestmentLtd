@@ -35,7 +35,7 @@ export function ProductsSection() {
             Nigeria's Premier Heavy-Duty Inventory
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground leading-relaxed text-pretty">
-            {"From 40-ton tippers to genuine engine assemblies, we stock the most reliable brands for the Nigerian terrain. All units inspected and ready for immediate delivery."}
+            {"From heavy-duty tippers and tractor heads to genuine engine assemblies, explore the brands and configurations available through our Lagos sales team. Ask for the current price, exact specification, and delivery details for any model."}
           </p>
           
           {/* Filters */}
@@ -113,7 +113,7 @@ export function ProductsSection() {
                       View Specs
                     </Button>
                     <a
-                      href={`https://wa.me/2348105955892?text=I%20am%20interested%20in%20the%20${encodeURIComponent(product.title)}.%20Please%20share%20pricing.`}
+                      href={`https://wa.me/2348105955892?text=I%20am%20interested%20in%20the%20${encodeURIComponent(product.title)}.%20Please%20share%20the%20current%20price%2C%20specification%2C%20and%20delivery%20details.`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

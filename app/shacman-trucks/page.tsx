@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Shacman F3000 & X3000 Trucks in Nigeria | Dealer Lagos 2026",
+  title: "Shacman F3000 & X3000 Trucks in Nigeria | Dealer Lagos",
   description: "Explore Shacman F3000 dump trucks and X3000 tractor heads in Lagos. Ask Oludare Investment Ltd about current availability, specifications, inspection, delivery, and direct sales contact.",
   keywords: [
     "shacman f3000 for sale nigeria", "shacman f3000 dump truck lagos", "shacman x3000 tractor head nigeria",
@@ -23,10 +23,10 @@ export default function ShacmanTrucksPage() {
     <main>
       <Header />
       <LandingHero 
-        title="Shacman F3000 & X3000 Availability & Buyer Guide 2026"
+        title="Shacman F3000 & X3000 Trucks for Nigerian Work"
         subtitle="Premium Industrial Engineering"
-        description="Experience the power of MAN technology and Weichai engines. We supply the most durable Shacman F3000 dump trucks and X3000 tractor heads to major construction firms across Nigeria."
-        ctaText="Check Shacman Availability"
+        description="Explore Shacman F3000 dump trucks and X3000 tractor heads for quarrying, construction, mining, and long-haul work. Ask sales for the current price and exact configuration."
+        ctaText="Ask for Shacman Price & Specs"
       />
       
       <div className="bg-secondary pt-8">
@@ -38,8 +38,8 @@ export default function ShacmanTrucksPage() {
       <CategoryInventory 
         filterType="brand"
         filterValue="Shacman"
-        title="Premium Shacman Inventory"
-        description="Explore our range of heavy-duty Shacman tippers and long-haul tractor heads available for inspection in Lagos."
+        title="Shacman F3000 & X3000 Truck Range"
+        description="Explore heavy-duty Shacman tippers and long-haul tractor heads supplied and sourced for demanding Nigerian operations."
       />
 
       <section className="bg-background py-16 lg:py-24">

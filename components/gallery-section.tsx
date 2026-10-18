@@ -97,12 +97,12 @@ export function GallerySection() {
     <section className="bg-background py-16 lg:py-24 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mb-14 text-center">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">Live Inventory</p>
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">Truck & Machinery Range</p>
           <h2 className="mb-4 text-3xl font-black text-foreground lg:text-5xl text-balance">
-            Nigeria's Largest Truck Stock
+            Heavy-Duty Equipment for Nigerian Work
           </h2>
           <p className="mx-auto max-w-xl text-muted-foreground leading-relaxed text-pretty">
-            {"Explore our massive collection of heavy-duty trucks, machinery, and genuine spare parts. Real photos from our Ojodu Berger yard."}
+            {"Browse representative models across trucks, trailers, machinery, and genuine spare parts. Send the model you want to sales for current price, specification, and sourcing details."}
           </p>
         </div>
 
