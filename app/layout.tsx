@@ -189,7 +189,7 @@ export default function RootLayout({
         <WhatsAppTracker />
         <Analytics />
 
-        {/* Comprehensive JSON-LD Local Business, AutoDealer & Product Catalog Schema */
+        {/* Comprehensive JSON-LD Local Business, AutoDealer & Product Catalog Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
