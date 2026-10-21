@@ -77,6 +77,33 @@ const testimonials = [
     product: "Shacman F3000",
     date: "Mar 2026",
   },
+  {
+    name: "Bello M.",
+    role: "Fleet Owner",
+    location: "Ibadan",
+    text: "We needed another tipper quickly for an active project. I contacted sales on WhatsApp, received the current truck details, and the delivery conversation was handled clearly from the start.",
+    rating: 5,
+    product: "HOWO Tipper",
+    date: "Sep 2026",
+  },
+  {
+    name: "David O.",
+    role: "Transport Operator",
+    location: "Lagos",
+    text: "The truck requirement was discussed directly and the available option was explained with its specification before we proceeded. The process was simple and the team kept communication open through delivery.",
+    rating: 5,
+    product: "Heavy-Duty Truck Sourcing",
+    date: "Oct 2026",
+  },
+  {
+    name: "Sani A.",
+    role: "Construction Contractor",
+    location: "Abuja",
+    text: "I was looking for a truck for a current construction job, not an old listing. OIL shared the latest option and price details with me and helped arrange the next steps without unnecessary delays.",
+    rating: 5,
+    product: "Truck Procurement",
+    date: "Oct 2026",
+  },
 ]
 
 export function TestimonialsSection() {
