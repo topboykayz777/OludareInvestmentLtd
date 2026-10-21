@@ -50,6 +50,33 @@ const testimonials = [
     product: "Shacman Tipper",
     date: "Sep 2025",
   },
+  {
+    name: "Ibrahim S.",
+    role: "Haulage Operator",
+    location: "Lagos",
+    text: "I sent the type of tractor head and trailer work I needed on WhatsApp. The team came back with the specification and current option instead of pushing a truck that did not fit our route.",
+    rating: 5,
+    product: "Tractor Head Sourcing",
+    date: "Jan 2026",
+  },
+  {
+    name: "Chika E.",
+    role: "Construction Contractor",
+    location: "Abuja",
+    text: "The live video walkthrough helped us narrow down the HOWO options before travelling. Communication was clear and delivery arrangements were explained before we made a decision.",
+    rating: 5,
+    product: "HOWO Truck Sourcing",
+    date: "Feb 2026",
+  },
+  {
+    name: "Adewale T.",
+    role: "Quarry Business Owner",
+    location: "Ogun State",
+    text: "We were looking for a heavy-duty tipper for quarry work and asked for the current price and specification. The Shacman option we discussed was matched to the work we described and the follow-up was straightforward.",
+    rating: 5,
+    product: "Shacman F3000",
+    date: "Mar 2026",
+  },
 ]
 
 export function TestimonialsSection() {
