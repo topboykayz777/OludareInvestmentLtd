@@ -46,6 +46,19 @@ export default function TruckDealerLagosPage() {
           <div className="mx-auto mt-16 max-w-4xl">
             <h2 className="text-3xl font-black text-foreground lg:text-4xl">A Lagos Truck Yard for Serious Buyers</h2>
             <div className="mt-6 space-y-5 text-muted-foreground leading-relaxed"><p>Oludare Investment Ltd serves construction companies, quarry operators, haulage businesses, contractors, and individual fleet owners looking for heavy-duty equipment in Lagos and across Nigeria.</p><p>Our team can help you identify a suitable HOWO or Shacman configuration, arrange an inspection, and discuss delivery options for your location. Availability changes, so contact the sales office before travelling to the yard.</p></div>
+            <div className="relative mt-8 h-80 overflow-hidden rounded-2xl border border-border shadow-inner">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507322.2368768941!2d3.3611977383997833!3d6.590232761500206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b4218fdb61e6343%3A0xb57043be889b2d76!2sOludare%20Investment%20Ltd!5e0!3m2!1sen!2sng!4v1792590047790!5m2!1sen!2sng"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Oludare Investment Ltd Ojodu Berger yard map"
+                className="absolute inset-0"
+              />
+            </div>
           </div>
         </div>
       </section>

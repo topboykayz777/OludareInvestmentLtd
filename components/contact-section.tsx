@@ -121,14 +121,14 @@ export function ContactSection() {
 
             <div className="relative h-80 overflow-hidden rounded-2xl border border-border shadow-inner">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2!2d3.3470!3d6.6370!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9228a5e0b3c9%3A0x5f1c0c6f0f0b0e0a!2sOjodu+Berger%2C+Lagos-Ibadan+Expressway%2C+Lagos!5e0!3m2!1sen!2sng!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507322.2368768941!2d3.3611977383997833!3d6.590232761500206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b4218fdb61e6343%3A0xb57043be889b2d76!2sOludare%20Investment%20Ltd!5e0!3m2!1sen!2sng!4v1792590047790!5m2!1sen!2sng"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Oludare Investment Ltd Location"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Oludare Investment Ltd on Google Maps"
                 className="absolute inset-0"
               />
             </div>
