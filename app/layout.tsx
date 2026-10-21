@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
+import { WhatsAppTracker } from '@/components/whatsapp-tracker'
 import './globals.css'
 
 // SEO constants
@@ -185,9 +186,10 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
         </ThemeProvider>
+        <WhatsAppTracker />
         <Analytics />
 
-        {/* Comprehensive JSON-LD Local Business, AutoDealer & Product Catalog Schema */}
+        {/* Comprehensive JSON-LD Local Business, AutoDealer & Product Catalog Schema */
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

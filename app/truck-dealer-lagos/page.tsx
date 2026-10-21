@@ -2,6 +2,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ContactSection } from "@/components/contact-section"
 import { Breadcrumbs } from "@/components/breadcrumbs"
+import { SourcingProcess } from "@/components/sourcing-process"
+import { TruckBuyingFaq } from "@/components/truck-buying-faq"
 import { MapPin, Phone, MessageCircle, ShieldCheck, Truck } from "lucide-react"
 import type { Metadata } from "next"
 
@@ -47,6 +49,8 @@ export default function TruckDealerLagosPage() {
           </div>
         </div>
       </section>
+      <SourcingProcess compact />
+      <TruckBuyingFaq />
       <ContactSection />
       <Footer />
     </main>

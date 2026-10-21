@@ -4,6 +4,8 @@ import { LandingHero } from "@/components/landing-hero"
 import { CategoryInventory } from "@/components/category-inventory"
 import { ContactSection } from "@/components/contact-section"
 import { Breadcrumbs } from "@/components/breadcrumbs"
+import { SourcingProcess } from "@/components/sourcing-process"
+import { TruckBuyingFaq } from "@/components/truck-buying-faq"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -92,6 +94,8 @@ export default function HowoTrucksPage() {
         </div>
       </section>
 
+      <SourcingProcess />
+      <TruckBuyingFaq category="howo" />
       <ContactSection />
       <Footer />
     </main>
