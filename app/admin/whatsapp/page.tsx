@@ -1,7 +1,7 @@
 "use client"
 
 import { FormEvent, useState } from "react"
-import { supabase } from "@/integrations/supabase/client"
+import { supabase } from "@/src/integrations/supabase/client"
 import { LockKeyhole, MessageCircle } from "lucide-react"
 
 type EventRow = { id: string; event_name: string; page_path: string; cta_label: string; created_at: string }
